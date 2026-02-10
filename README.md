@@ -34,6 +34,7 @@ This repository experiments with practical ways to:
 
 The repository is organized as a **progressive set of subprojects**, each building on the previous one _similar to how an AI product’s knowledge layer evolves in production._
 
+```
 AI-First-Knowledge-Architecture/
 │
 ├── 01-agent-ready-knowledge-base/
@@ -51,7 +52,7 @@ AI-First-Knowledge-Architecture/
     ├── architecture-diagrams/
     ├── demos/
     └── case-notes/
-
+```
 
 Each subproject can be explored independently, but together they form a **cohesive knowledge architecture** for agentic systems.
 
