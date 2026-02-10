@@ -1,4 +1,4 @@
-# Problem Statement: Human-Oriented Documentation in Agentic Systems
+# Human-Oriented Documentation in Agentic Systems
 
 ## Background
 
