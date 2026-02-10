@@ -86,7 +86,7 @@ Solving this problem is a prerequisite for building AI systems that are predicta
 
 ## Expected Outcomes
 
-By the end of this subproject, we should have:
+By the end of this subproject, you should have:
 
 - _A clear definition of the limitations of human-oriented documentation_
 - _A concrete example of an Agent-Ready knowledge structure_
