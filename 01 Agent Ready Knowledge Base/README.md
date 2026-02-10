@@ -29,7 +29,7 @@ This mirrors the early-stage work AI-first companies do when moving from static 
 
 ---
 
-## The problem being addressed
+## The Problem being addressed
 
 Traditional documentation assumes:
 - A human reader
@@ -100,7 +100,7 @@ Each artifact is designed to reflect how this work happens in real AI product te
 
 ---
 
-## What “agent-ready” means here
+## What “Agent-Ready” means here
 
 In this context, agent-ready knowledge:
 - Is modular and self-contained
