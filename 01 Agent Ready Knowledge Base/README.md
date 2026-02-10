@@ -1,119 +1,141 @@
-# 01 Agent Ready Knowledge Base
+# Subproject 01: Agent Ready Knowledge Base
 
-### Turning human-oriented documentation into structured knowledge that AI agents can reliably use
+### Turning human-oriented documentation into structured knowledge AI agents can reliably use
 
----
+This subproject focuses on a foundational problem in AI-first systems:
 
-## Problem this subproject addresses
+**Most documentation is written for humans — but increasingly consumed by AI.**
 
-Most documentation today is written assuming a human reader:
-- It relies on context, intuition, and prior knowledge
-- Important steps are implied rather than stated
-- Content is optimized for readability, not execution
+When AI agents rely on human-oriented content, teams encounter issues such as:
+- Ambiguous instructions
+- Missing decision criteria
+- Inconsistent terminology
+- Unpredictable agent behavior
 
-When the same documentation is consumed by AI agents, these assumptions break down:
-- Ambiguity leads to inconsistent answers
-- Missing steps cause task failures
-- The same intent is handled differently across documents
-
-This subproject explores how to redesign a traditional knowledge base so that it can be **consumed, reasoned over, and reused by AI agents** with predictable behavior.
+This subproject explores how to **restructure traditional documentation into agent-ready knowledge units** that are explicit, consistent, and testable.
 
 ---
 
-## What this subproject builds
+## What this subproject is about
 
-A minimal but production-style **agent-ready knowledge base** with:
+The goal is not to build a chatbot.
 
-- Explicit content units instead of long articles
-- Structured schemas (JSON / YAML) rather than free text
-- Metadata that helps AI reason about intent, scope, and risk
-- Clear separation between:
-  - Facts
-  - Instructions
-  - Constraints
-  - Preconditions
+The goal is to design a **knowledge layer** that:
+- AI agents can retrieve reliably
+- Models can reason over consistently
+- Teams can evaluate and improve over time
 
-The goal is not to build a chatbot, but to build **reliable knowledge inputs** for agentic systems.
+This mirrors the early-stage work AI-first companies do when moving from static documentation to agent-driven systems.
 
 ---
 
-## Folder structure
+## The problem being addressed
+
+Traditional documentation assumes:
+- A human reader
+- Context is carried implicitly
+- Interpretation handled by the reader
+
+AI agents assume none of this.
+
+When agents consume the same content:
+- Implicit steps are skipped
+- Ambiguity leads to incorrect actions
+- Minor wording differences cause inconsistent outcomes
+
+This subproject addresses that gap by:
+- Making assumptions explicit
+- Structuring content into discrete knowledge units
+- Attaching metadata that guides AI behavior
+
+---
+
+## What’s included in this subproject
+
+This subproject includes:
+
+- A sample **human-written help article**
+- A transformed **agent-ready version** of the same content
+- A **knowledge unit schema** defining structure and metadata
+- Notes on chunking and transformation decisions
+- Evaluation criteria to assess content quality
+
+Each artifact is designed to reflect how this work happens in real AI product teams.
+
+---
+
+## Folder overview
 
 ```
-01 Agent-Ready Knowledge Base/
+01 Agent Ready Knowledge Base/
 │
 ├── README.md
-├── source-docs/
-│   └── human-docs.md
 │
-├── Knowledge Units/
-│   ├── account_cancellation.yaml
-│   ├── refund_policy.yaml
-│   └── subscription_status.yaml
+├── problem/                                    # The real-world problem statement
+│   └── problem_statement.md
 │
-├── Schemas/
+├── content/                                    # Before and after content examples
+│   ├── human_docs/
+│   │   └── original_help_article.md
+│   │
+│   ├── agent_ready/
+│   │   ├── knowledge_units.json
+│   │   └── metadata_schema.yaml
+│
+├── schemas/                                    # Knowledge structure definitions
 │   └── knowledge_unit_schema.yaml
 │
-├── Examples/
-│   ├── before_human_content.md
-│   └── after_agent_ready_content.yaml
+├── pipeline/                                   # Transformation and chunking logic
+│   ├── chunking_strategy.md
+│   └── transformation_notes.md
 │
-└── Notes/
-    └── design-decisions.md
+├── evaluation/                                 # Quality metrics and validation 
+│   ├── metrics.md
+│   └── sample_evaluation.json
+│
+└── demo/                                       # Notes for a short walkthrough demo
+    └── demo_notes.md
 ```
 
----
-
-## Content model (high-level)
-
-Each knowledge unit follows a consistent structure:
-
-- **intent** – what problem this knowledge addresses
-- **description** – short, explicit explanation
-- **preconditions** – what must be true before execution
-- **steps** – ordered, atomic instructions
-- **constraints** – rules that must not be violated
-- **exceptions** – known edge cases
-- **confidence_level** – how safe this knowledge is for automation
-
-This structure allows agents to:
-- Reason step-by-step
-- Detect missing information
-- Avoid unsafe actions
 
 ---
 
-## Before vs after (conceptual)
+## What “agent-ready” means here
 
-**Before (human-oriented):**
-> You can cancel your subscription anytime from your account settings.
+In this context, agent-ready knowledge:
+- Is modular and self-contained
+- Avoids implicit assumptions
+- Uses consistent terminology
+- Includes metadata such as intent, task type, and constraints
+- Can be evaluated independently of a UI or prompt
 
-**After (agent-ready):**
-- Intent is explicit
-- Preconditions are defined
-- Steps are ordered
-- Constraints are machine-readable
-
-This difference is explored in detail in the `Examples/` folder.
-
----
-
-## How this would be used in a real system
-
-In a production AI system, this knowledge base could:
-- Feed a RAG pipeline
-- Be loaded directly into agent memory
-- Act as the source of truth for multiple agents
-- Be versioned and evaluated like code
-
-Later subprojects will build on this foundation.
+This makes the content suitable for:
+- Retrieval-Augmented Generation (RAG)
+- Multi-step agent workflows
+- Tool-using agents
 
 ---
 
-## What comes next
+## How this fits into the larger project
 
-Once the knowledge base is structured and stable, the next step is to:
-- Define **agent workflows** that consume this knowledge
-- Move from information retrieval to task execution
+This is the foundation for all later subprojects.
 
-That transition is explored in **Subproject 02: Agent Workflow Playbooks**.
+Once knowledge is:
+- Structured
+- Explicit
+- Evaluatable
+
+It becomes possible to:
+- Drive workflows through content
+- Detect inconsistencies automatically
+- Measure the impact of content changes on agent behavior
+
+---
+
+### Next step within this subproject
+
+The next step is to clearly define the **problem statement** this knowledge base is solving.
+
+That will live in:
+
+`problem/problem_statement.md`
