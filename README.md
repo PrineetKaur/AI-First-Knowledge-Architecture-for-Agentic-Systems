@@ -37,18 +37,18 @@ The repository is organized as a **progressive set of subprojects**, each buildi
 ```
 AI-First-Knowledge-Architecture/
 │
-├── 01-agent-ready-knowledge-base/
-├── 02-agent-workflow-playbooks/
-├── 03-knowledge-quality-evaluator/
-├── 04-ai-optimized-faq-pipeline/
-├── 05-tool-using-agent-system/
+├── 01 Agent Ready Knowledge Base/
+├── 02 Agent Workflow Playbooks/
+├── 03 Knowledge Quality Evaluator/
+├── 04 AI Optimized FAQ Pipeline/
+├── 05 Tool Using Agent System/
 │
-├── shared/
+├── Shared/
 │   ├── schemas/
 │   ├── evaluation-metrics/
 │   └── sample-data/
 │
-└── docs/
+└── Docs/
     ├── architecture-diagrams/
     ├── demos/
     └── case-notes/
