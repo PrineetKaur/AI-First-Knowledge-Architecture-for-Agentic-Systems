@@ -1,4 +1,4 @@
-# 01 Agent-Ready Knowledge Base
+# 01 Agent Ready Knowledge Base
 
 ### Turning human-oriented documentation into structured knowledge that AI agents can reliably use
 
