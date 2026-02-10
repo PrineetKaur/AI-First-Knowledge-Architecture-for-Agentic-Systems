@@ -1,0 +1,312 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+$id: "https://example.com/schemas/knowledge_unit_schema.json"
+title: "Agent-Ready Knowledge Unit Schema"
+description: >
+  Schema for a modular, self-contained knowledge unit designed for AI agent consumption.
+  Optimized for retrieval, reasoning, workflow execution, and evaluation.
+
+type: object
+additionalProperties: false
+
+required:
+  - id
+  - title
+  - intent
+  - domain
+  - task_type
+  - audience
+  - canonical_answer
+  - steps
+  - constraints
+  - risk
+  - governance
+  - versioning
+
+properties:
+  id:
+    type: string
+    description: "Stable identifier for the knowledge unit (e.g., KU-CANCEL-SUB-001)."
+    minLength: 6
+
+  title:
+    type: string
+    description: "Human-readable title for quick scanning and debugging."
+    minLength: 5
+
+  intent:
+    type: string
+    description: "What the user/agent is trying to accomplish."
+    examples:
+      - "cancel_subscription"
+      - "request_refund"
+      - "update_billing_details"
+
+  domain:
+    type: string
+    description: "Business domain or product area."
+    examples:
+      - "billing"
+      - "account"
+      - "security"
+      - "support"
+
+  task_type:
+    type: string
+    description: "The shape of the task (used to route to agent strategies)."
+    enum:
+      - "how_to"
+      - "policy"
+      - "troubleshooting"
+      - "decision_tree"
+      - "workflow"
+      - "reference"
+
+  audience:
+    type: object
+    additionalProperties: false
+    required: [primary]
+    properties:
+      primary:
+        type: string
+        description: "Primary target consumer."
+        enum: ["agent", "human", "both"]
+      roles_allowed:
+        type: array
+        description: "Roles permitted to perform the task (for authorization checks)."
+        items:
+          type: string
+        examples:
+          - ["account_owner"]
+          - ["admin", "account_owner"]
+
+  summary:
+    type: string
+    description: "One-paragraph overview (useful for humans and retrieval)."
+
+  canonical_answer:
+    type: string
+    description: >
+      The best single response if an agent needs a concise answer.
+      Should be accurate, complete, and consistent with steps + constraints.
+    minLength: 20
+
+  prerequisites:
+    type: array
+    description: "Things that must be true before the workflow can proceed."
+    items:
+      type: object
+      additionalProperties: false
+      required: [name, description]
+      properties:
+        name:
+          type: string
+          examples: ["user_logged_in", "account_owner_only"]
+        description:
+          type: string
+    default: []
+
+  steps:
+    type: array
+    description: >
+      Ordered steps the agent should follow. Steps must be explicit and actionable.
+      If a step depends on a condition, encode it via 'condition' and 'on_fail'.
+    minItems: 1
+    items:
+      type: object
+      additionalProperties: false
+      required: [step_id, instruction]
+      properties:
+        step_id:
+          type: string
+          description: "Stable step identifier (e.g., S1, S2, CHECK_OWNERSHIP)."
+        instruction:
+          type: string
+          description: "The exact action the agent/human should take."
+        condition:
+          type: string
+          description: "Boolean condition in plain language that must be satisfied to execute this step."
+          examples:
+            - "User is the account owner"
+            - "Billing page is accessible"
+        on_fail:
+          type: string
+          description: "What to do if condition is not met."
+          examples:
+            - "Ask the user to contact the account owner to proceed."
+            - "Escalate to support with account ID."
+        expected_outcome:
+          type: string
+          description: "What success looks like after completing this step."
+
+  decision_rules:
+    type: array
+    description: >
+      Explicit decision logic (often missing from human docs). Use this to reduce ambiguity.
+    items:
+      type: object
+      additionalProperties: false
+      required: [rule_id, if, then]
+      properties:
+        rule_id:
+          type: string
+          examples: ["R1", "R_REFUND_01"]
+        if:
+          type: string
+          description: "Condition expressed in plain language."
+        then:
+          type: string
+          description: "Action or conclusion if condition holds."
+        else:
+          type: string
+          description: "Action or conclusion if condition does not hold."
+    default: []
+
+  constraints:
+    type: object
+    description: "Hard limits, policies, and guardrails the agent must respect."
+    additionalProperties: false
+    required: [refund_policy, access_after_cancel, data_retention]
+    properties:
+      refund_policy:
+        type: string
+        description: "Refund rules stated unambiguously."
+      access_after_cancel:
+        type: string
+        description: "What happens to access immediately and at end of billing period."
+      data_retention:
+        type: string
+        description: "What happens to user data and how long it remains available."
+
+  escalation:
+    type: object
+    description: "When and how to escalate to a human or support."
+    additionalProperties: false
+    properties:
+      escalate_when:
+        type: array
+        items:
+          type: string
+        examples:
+          - ["Cancellation option missing", "Billing errors", "User disputes charge"]
+      contact_channels:
+        type: array
+        items:
+          type: string
+        examples:
+          - ["in_app_chat", "email_support"]
+      required_context:
+        type: array
+        description: "What context the agent should include when escalating."
+        items:
+          type: string
+        examples:
+          - ["account_id", "plan", "billing_period", "screenshot_if_applicable"]
+
+  examples:
+    type: object
+    description: "Before/after and interaction examples (used for eval + training)."
+    additionalProperties: false
+    properties:
+      before_human_doc_excerpt:
+        type: string
+      after_agent_ready_excerpt:
+        type: string
+      sample_queries:
+        type: array
+        items:
+          type: string
+        examples:
+          - ["How do I cancel?", "Cancel my plan today", "Will I be refunded?"]
+      gold_responses:
+        type: array
+        items:
+          type: string
+
+  retrieval:
+    type: object
+    description: "Fields that improve search, routing, and grounding."
+    additionalProperties: false
+    properties:
+      tags:
+        type: array
+        items:
+          type: string
+        examples:
+          - ["subscription", "billing", "cancellation"]
+      synonyms:
+        type: array
+        items:
+          type: string
+        examples:
+          - ["terminate plan", "end subscription", "stop billing"]
+      source_urls:
+        type: array
+        items:
+          type: string
+        description: "References (internal or public) that back up this unit."
+      embedding_text_hint:
+        type: string
+        description: >
+          Optional: a curated text field used for embeddings if you don't want to embed the entire unit.
+
+  risk:
+    type: object
+    description: "Risk classification for safety and agent autonomy limits."
+    additionalProperties: false
+    required: [level, failure_modes]
+    properties:
+      level:
+        type: string
+        enum: ["low", "medium", "high"]
+      failure_modes:
+        type: array
+        description: "How this could go wrong if the agent follows/answers incorrectly."
+        items:
+          type: string
+        examples:
+          - ["User cancels wrong account", "Agent promises refunds incorrectly"]
+
+  governance:
+    type: object
+    description: "Ownership and review information (treat content like code)."
+    additionalProperties: false
+    required: [owner, last_reviewed, review_cycle_days]
+    properties:
+      owner:
+        type: string
+        description: "Responsible owner/team (e.g., 'Knowledge Ops', 'Billing PM')."
+      last_reviewed:
+        type: string
+        description: "ISO date YYYY-MM-DD."
+        pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+      review_cycle_days:
+        type: integer
+        minimum: 1
+        description: "How often this unit should be reviewed."
+
+  versioning:
+    type: object
+    description: "Version control metadata."
+    additionalProperties: false
+    required: [version, status]
+    properties:
+      version:
+        type: string
+        description: "Semantic version of the knowledge unit."
+        pattern: "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        examples: ["1.0.0"]
+      status:
+        type: string
+        enum: ["draft", "active", "deprecated"]
+      change_log:
+        type: array
+        items:
+          type: object
+          additionalProperties: false
+          required: [date, change]
+          properties:
+            date:
+              type: string
+              pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+            change:
+              type: string
