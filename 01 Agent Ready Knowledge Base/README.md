@@ -132,7 +132,7 @@ It becomes possible to:
 
 ---
 
-### Next step within this subproject
+## Next step within this subproject
 
 The next step is to clearly define the **problem statement** this knowledge base is solving.
 
