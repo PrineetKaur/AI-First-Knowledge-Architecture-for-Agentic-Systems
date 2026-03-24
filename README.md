@@ -1,6 +1,6 @@
 # AI-First Knowledge Architecture for Agentic Systems
 
-### Designing content that AI agents can reason over, act on, and be evaluated against
+### Designing content that AI agents can Reason over, Act on, and be Evaluated against
 
 This repository explores how **knowledge and content roles change in AI-first products**, where information is no longer written only for humans but is **actively consumed by autonomous AI systems**.
 
