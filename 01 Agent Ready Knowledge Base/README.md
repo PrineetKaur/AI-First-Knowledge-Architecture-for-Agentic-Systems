@@ -4,7 +4,7 @@
 
 This subproject focuses on a foundational problem in AI-first systems:
 
-**Most documentation is written for humans — but increasingly consumed by AI.**
+**Most documentation is written for humans, but increasingly consumed by AI.**
 
 When AI agents rely on human-oriented content, teams encounter issues such as:
 - Ambiguous instructions
@@ -13,7 +13,6 @@ When AI agents rely on human-oriented content, teams encounter issues such as:
 - Unpredictable agent behavior
 
 This subproject explores how to **restructure traditional documentation into agent-ready knowledge units** that are explicit, consistent, and testable.
-
 ![Agent Ready Knowledge Base Architecture](architecture_diagram.png)
 
 ---
