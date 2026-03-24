@@ -14,7 +14,7 @@ When AI agents rely on human-oriented content, teams encounter issues such as:
 
 This subproject explores how to **restructure traditional documentation into agent-ready knowledge units** that are explicit, consistent, and testable.
 
-![Agent Ready Knowledge Architecture](0. Docs/architecture-diagrams.png)
+![Agent Ready Knowledge Architecture](0. Docs/architecture_diagram.png)
 
 ---
 
