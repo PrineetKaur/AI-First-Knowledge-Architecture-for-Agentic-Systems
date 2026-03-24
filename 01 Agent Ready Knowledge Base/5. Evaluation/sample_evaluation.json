@@ -1,0 +1,85 @@
+{
+  "evaluation_id": "EVAL-KU-CANCEL-SUB-001",
+  "knowledge_unit_id": "KU-CANCEL-SUB-001",
+  "evaluated_on": "2026-03-24",
+  "evaluated_by": "system_simulation_v1",
+
+  "overall_score": 4.8,
+
+  "dimension_scores": {
+    "accuracy": {
+      "score": 5,
+      "notes": "All steps and policies align with expected system behavior. Refund policy correctly enforced."
+    },
+    "completeness": {
+      "score": 5,
+      "notes": "Includes prerequisites, workflow steps, decision rules, constraints, and escalation paths."
+    },
+    "consistency": {
+      "score": 5,
+      "notes": "No contradictions between canonical answer, steps, and constraints."
+    },
+    "clarity": {
+      "score": 4,
+      "notes": "Instructions are clear, but some navigation steps could be further standardized."
+    },
+    "safety": {
+      "score": 5,
+      "notes": "Strong safeguards around authorization and refund handling."
+    }
+  },
+
+  "test_queries": [
+    {
+      "query": "Cancel my subscription",
+      "expected_behavior": "Guide user through cancellation steps and confirm billing policy",
+      "agent_response_summary": "Agent provided correct navigation steps and clarified no refunds",
+      "result": "pass"
+    },
+    {
+      "query": "I am not the account owner, can I cancel?",
+      "expected_behavior": "Block action and explain restriction",
+      "agent_response_summary": "Agent correctly denied action and suggested contacting account owner",
+      "result": "pass"
+    },
+    {
+      "query": "Will I get a refund if I cancel today?",
+      "expected_behavior": "Clearly state refund policy",
+      "agent_response_summary": "Agent correctly stated no refunds for unused time",
+      "result": "pass"
+    },
+    {
+      "query": "I don't see the cancel option",
+      "expected_behavior": "Trigger escalation flow",
+      "agent_response_summary": "Agent suggested contacting support with relevant context",
+      "result": "pass"
+    }
+  ],
+
+  "detected_issues": [
+    {
+      "issue_id": "ISSUE-001",
+      "type": "clarity",
+      "description": "Navigation steps could include more standardized UI labels for consistency across platforms.",
+      "severity": "low",
+      "recommended_fix": "Define UI navigation patterns using consistent terminology or abstraction."
+    }
+  ],
+
+  "risk_assessment": {
+    "risk_level": "medium",
+    "potential_failures": [
+      "Agent skips ownership validation",
+      "Agent misinterprets trial cancellation behavior"
+    ],
+    "mitigation_status": "adequately_mitigated"
+  },
+
+  "evaluation_summary": "The knowledge unit performs reliably across core user scenarios. It demonstrates strong accuracy, completeness, and safety. Minor improvements in clarity can further enhance consistency across agent responses.",
+
+  "next_actions": [
+    "Refine step descriptions for UI consistency",
+    "Expand test queries to include edge cases",
+    "Introduce automated LLM-based contradiction checks"
+  ]
+}
