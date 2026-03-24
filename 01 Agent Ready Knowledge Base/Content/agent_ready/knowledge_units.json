@@ -1,0 +1,176 @@
+[
+  {
+    "id": "KU-CANCEL-SUB-001",
+    "title": "Cancel Subscription",
+    "intent": "cancel_subscription",
+    "domain": "billing",
+    "task_type": "workflow",
+
+    "audience": {
+      "primary": "agent",
+      "roles_allowed": ["account_owner"]
+    },
+
+    "summary": "Allows a user to cancel their active subscription from account settings. Access continues until the end of the billing cycle. Refunds are not provided for unused time.",
+
+    "canonical_answer": "To cancel your subscription, go to Account Settings → Billing → Manage Subscription → Cancel Subscription. Only account owners can cancel. Your access will continue until the end of the billing cycle, and no refunds are issued for unused time.",
+
+    "prerequisites": [
+      {
+        "name": "user_logged_in",
+        "description": "User must be authenticated and able to access account settings."
+      },
+      {
+        "name": "account_owner_only",
+        "description": "Only the account owner is authorized to cancel the subscription."
+      }
+    ],
+
+    "steps": [
+      {
+        "step_id": "S1",
+        "instruction": "Verify the user is logged into their account.",
+        "condition": "User session is active",
+        "on_fail": "Ask the user to log in before proceeding.",
+        "expected_outcome": "User is authenticated."
+      },
+      {
+        "step_id": "S2",
+        "instruction": "Check if the user is the account owner.",
+        "condition": "User role is account owner",
+        "on_fail": "Inform the user that only the account owner can cancel the subscription.",
+        "expected_outcome": "User is authorized to perform cancellation."
+      },
+      {
+        "step_id": "S3",
+        "instruction": "Navigate to Account Settings.",
+        "expected_outcome": "Account Settings page is open."
+      },
+      {
+        "step_id": "S4",
+        "instruction": "Open the Billing section.",
+        "expected_outcome": "Billing settings are visible."
+      },
+      {
+        "step_id": "S5",
+        "instruction": "Select 'Manage Subscription'.",
+        "expected_outcome": "Subscription management options are displayed."
+      },
+      {
+        "step_id": "S6",
+        "instruction": "Click 'Cancel Subscription'.",
+        "expected_outcome": "Cancellation flow is initiated."
+      },
+      {
+        "step_id": "S7",
+        "instruction": "Confirm cancellation when prompted.",
+        "expected_outcome": "Subscription is successfully canceled and confirmation is shown."
+      }
+    ],
+
+    "decision_rules": [
+      {
+        "rule_id": "R1",
+        "if": "User is on a trial plan",
+        "then": "Cancel immediately and remove access",
+        "else": "Continue access until the end of billing period"
+      },
+      {
+        "rule_id": "R2",
+        "if": "User asks for refund after cancellation",
+        "then": "Inform that refunds are not provided for partially used billing periods",
+        "else": "No action required"
+      },
+      {
+        "rule_id": "R3",
+        "if": "Cancellation option is not visible",
+        "then": "Escalate to support",
+        "else": "Proceed with standard flow"
+      }
+    ],
+
+    "constraints": {
+      "refund_policy": "No refunds are issued for partially used billing periods.",
+      "access_after_cancel": "Access continues until the end of the current billing cycle unless on a trial, where access ends immediately.",
+      "data_retention": "User data remains available for a limited time after cancellation."
+    },
+
+    "escalation": {
+      "escalate_when": [
+        "Cancellation option not visible",
+        "Billing discrepancy reported",
+        "User disputes a charge"
+      ],
+      "contact_channels": [
+        "in_app_chat",
+        "email_support"
+      ],
+      "required_context": [
+        "account_id",
+        "subscription_plan",
+        "billing_period",
+        "user_issue_description"
+      ]
+    },
+
+    "examples": {
+      "before_human_doc_excerpt": "You can cancel your subscription at any time from your account settings.",
+      "after_agent_ready_excerpt": "Verify user is account owner → Navigate to Billing → Execute cancellation → Apply refund and access policies.",
+      "sample_queries": [
+        "Cancel my subscription",
+        "How do I stop my plan?",
+        "End my billing",
+        "Will I get a refund if I cancel?"
+      ],
+      "gold_responses": [
+        "You can cancel from Account Settings → Billing → Manage Subscription.",
+        "Only account owners can cancel subscriptions.",
+        "No refunds are issued, but access continues until the end of billing period."
+      ]
+    },
+
+    "retrieval": {
+      "tags": [
+        "subscription",
+        "billing",
+        "cancellation"
+      ],
+      "synonyms": [
+        "cancel plan",
+        "end subscription",
+        "stop billing",
+        "terminate account plan"
+      ],
+      "source_urls": [
+        "internal://helpcenter/cancel-subscription"
+      ],
+      "embedding_text_hint": "Cancel subscription steps, billing policy, refund rules, and account owner permissions."
+    },
+
+    "risk": {
+      "level": "medium",
+      "failure_modes": [
+        "Agent cancels wrong user's subscription",
+        "Agent incorrectly promises refunds",
+        "Agent skips authorization checks"
+      ]
+    },
+
+    "governance": {
+      "owner": "Knowledge Ops",
+      "last_reviewed": "2026-03-24",
+      "review_cycle_days": 30
+    },
+
+    "versioning": {
+      "version": "1.0.0",
+      "status": "active",
+      "change_log": [
+        {
+          "date": "2026-03-24",
+          "change": "Initial version of agent-ready knowledge unit for subscription cancellation."
+        }
+      ]
+    }
+  }
+]
