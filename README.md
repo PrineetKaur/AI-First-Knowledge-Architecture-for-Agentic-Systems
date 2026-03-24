@@ -11,6 +11,8 @@ This project treats knowledge as a **first-class system component** *(structured
 
 The work here reflects real problems faced by *AI-native companies* building *agent-driven products*, where content directly impacts **system reliability, safety,** and **outcomes**.
 
+![Project Preview Image](preview.png)
+
 ---
 
 ## What this project is trying to solve
