@@ -17,16 +17,16 @@ The work here reflects real problems faced by *AI-native companies* building *ag
 
 As AI systems move from chatbots to **multi-step autonomous agents**, teams start hitting new challenges:
 
-- Documentation written for humans breaks when used by AI
-- Inconsistent or ambiguous content causes unreliable agent behavior
-- Knowledge changes are hard to test and validate
-- Content errors silently degrade system performance
+- *Documentation written for humans breaks when used by AI*
+- *Inconsistent or ambiguous content causes unreliable agent behavior*
+- *Knowledge changes are hard to test and validate*
+- *Content errors can degrade system performance*
 
 This repository experiments with practical ways to:
-- Structure knowledge so AI can reason over it
-- Define agent workflows through content
-- Evaluate accuracy, consistency, and completeness automatically
-- Treat content as something that can fail and therefore must be tested
+- *Structure knowledge so AI can reason over it*
+- *Define agent workflows through content*
+- *Evaluate accuracy, consistency, and completeness automatically*
+- *Treat content as something that can fail and therefore must be tested*
 
 ---
 
