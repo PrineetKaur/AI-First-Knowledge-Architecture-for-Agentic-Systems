@@ -12,7 +12,7 @@ When AI agents rely on human-oriented content, teams encounter issues such as:
 - *Inconsistent terminology*
 - *Unpredictable agent behavior*
 
-This subproject explores how to **restructure traditional documentation into agent-ready knowledge units** that are explicit, consistent, and testable.
+This subproject explores how to **restructure traditional documentation into agent-ready knowledge units** that are explicit, consistent, and testable. And at the high-level, the **transformation pipeline** looks like:
 ![Agent Ready Knowledge Base Architecture](architecture_diagram.png)
 
 ---
@@ -28,7 +28,7 @@ This mirrors the early-stage work AI-first companies do when moving from static 
 
 ---
 
-## The Problem being addressed
+## The problem being addressed
 
 Traditional documentation assumes:
 - *A human reader*
