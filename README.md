@@ -38,16 +38,16 @@ This repository experiments with practical ways to:
 - AI-first Knowledge Architecture  
 - Agentic Workflows  
 - Structured Content Modeling  
-- Retrieval-Augmented Generation (RAG) Foundations  
+- Retrieval-Augmented Generation *(RAG)* Foundations  
 
 **Data and Content Layer**
-- JSON (Knowledge Units)  
-- YAML (Schemas & Configurations)  
-- Markdown (Documentation & Source Content)  
+- JSON *(Knowledge Units)*
+- YAML *(Schemas & Configurations)*  
+- Markdown *(Documentation & Source Content)* 
 
 **AI and LLM Integration (Conceptual → Implementation in later stages)**
-- OpenAI / LLM APIs (for transformation and evaluation)  
-- Embedding-based retrieval (planned)  
+- OpenAI / LLM APIs *(for transformation and evaluation)* 
+- Embedding-based retrieval *(planned)*  
 
 **System Design**
 - Modular Knowledge Systems  
@@ -57,7 +57,7 @@ This repository experiments with practical ways to:
 **Evaluation and Quality**
 - Rule-based validation  
 - Simulation testing  
-- LLM-based evaluation frameworks (planned)  
+- LLM-based evaluation frameworks *(planned for later stage)*  
 
 ---
 
@@ -65,11 +65,11 @@ This repository experiments with practical ways to:
 
 The following technologies will be introduced in later stages of the project:
 
-- Python (for pipeline orchestration and agent logic)  
-- LangChain / LlamaIndex (for building agent workflows and RAG pipelines)  
-- Vector Databases (FAISS / Chroma) for semantic retrieval  
+- Python *(for pipeline orchestration and agent logic)*  
+- LangChain / LlamaIndex *(for building agent workflows and RAG pipelines)*  
+- Vector Databases *(FAISS / Chroma)* for semantic retrieval  
 
-This progression mirrors how AI knowledge systems evolve from structured content design to fully integrated agent pipelines in production environments.
+**This progression has been planned in a manner to mirror **how real-life AI knowledge systems evolve from structured content design to fully integrated agent pipelines in production environments.**
 
 ---
 
