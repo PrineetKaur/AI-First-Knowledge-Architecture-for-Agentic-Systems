@@ -1,6 +1,6 @@
 # Subproject 01: Agent Ready Knowledge Base
 
-### Turning human-oriented documentation into structured knowledge AI agents can reliably use
+### Turning human-oriented docs into structured knowledge AI agents can reliably use
 
 This subproject focuses on a foundational problem in AI-first systems:
 
