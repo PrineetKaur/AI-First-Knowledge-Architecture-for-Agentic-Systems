@@ -24,7 +24,7 @@ The goal is to design a **knowledge layer** from which:
 - *Models can reason consistently*
 - *Teams can evaluate and improve over time*
 
-This mirrors the early-stage work AI-first companies do when moving from static documentation to agent-driven systems.
+This mirrors the early-stage work AI-first companies do when moving from static documentation to agent-driven knowledge systems.
 
 ---
 
@@ -35,9 +35,9 @@ Traditional documentation assumes:
 - *Context is carried implicitly*
 - *Interpretation handled by the reader*
 
-AI agents assume none of this.
+AI agents can assume none of this!
 
-When agents consume the same content:
+And thus, when agents consume the same content:
 - *Implicit steps are skipped*
 - *Ambiguity leads to incorrect actions*
 - *Minor wording differences cause inconsistent outcomes*
@@ -56,8 +56,8 @@ This subproject includes:
 - *A sample **human-written help article***
 - *A transformed **agent-ready version** of the same content*
 - *A **knowledge unit schema** defining structure and metadata*
-- *Notes on chunking and transformation decisions*
-- *Evaluation criteria to assess content quality*
+- *Notes on **chunking** and **transformation decisions***
+- ***Evaluation criteria** to assess **content quality***
 
 Each artifact is designed to reflect how this work happens in real AI product teams.
 
@@ -70,7 +70,7 @@ Each artifact is designed to reflect how this work happens in real AI product te
 │
 ├── README.md
 │
-├── problem/                                    # The real-world problem statement
+├── problem/                                    # Sample real-world problem statement
 │   └── problem_statement.md
 │
 ├── content/                                    # Before and after content examples
@@ -106,7 +106,7 @@ In this context, agent-ready knowledge:
 - *Avoids implicit assumptions*
 - *Uses consistent terminology*
 - *Includes metadata such as intent, task type, and constraints*
-- *Can be evaluated independently of a UI or prompt*
+- *Can be evaluated independently (without UI or prompt)*
 
 This makes the content suitable for:
 - *Retrieval-Augmented Generation (RAG)*
@@ -125,9 +125,9 @@ Once knowledge is:
 - *Evaluatable*
 
 It becomes possible to:
-- *Drive workflows through content*
-- *Detect inconsistencies automatically*
-- *Measure the impact of content changes on agent behavior*
+- ***Drive workflows through content***
+- ***Detect inconsistencies automatically***
+- ***Measure the impact of content changes on agent behavior***
 
 ---
 
