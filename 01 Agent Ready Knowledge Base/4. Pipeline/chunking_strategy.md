@@ -1,18 +1,20 @@
-# Chunking Strategy: From Human Docs to Agent-Ready Knowledge Units
+# Chunking Strategy for Agent-Ready Knowledge Units
 
-## Why chunking matters
-
-Human documentation is typically written as a continuous narrative.  
-AI agents, however, perform better when information is:
-
-- Modular
-- Explicit
-- Context-independent
-- Easy to retrieve and reason over
+## What is chunking and Why it matters
 
 Chunking is the process of breaking down large documents into **smaller, structured knowledge units** that an agent can reliably consume.
 
-This is not just a technical step — it is a **content design decision** that directly impacts agent behavior.
+And why do we need it after all?
+
+It's because human documentation is typically written as a continuous narrative.  But, AI agents, however, perform better *(and more importantly, consistently & accurately)* when information is:
+
+- *Modular*
+- *Explicit*
+- *Context-independent*
+- *Easy to retrieve and reason over*
+
+
+Note: This is not just a technical step. It is a **content design decision** that directly impacts agent behavior.
 
 ---
 
