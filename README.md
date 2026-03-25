@@ -32,6 +32,47 @@ This repository experiments with practical ways to:
 
 ---
 
+## Tech Stack & System Design
+
+**Core Concepts**
+- AI-first Knowledge Architecture  
+- Agentic Workflows  
+- Structured Content Modeling  
+- Retrieval-Augmented Generation (RAG) Foundations  
+
+**Data and Content Layer**
+- JSON (Knowledge Units)  
+- YAML (Schemas & Configurations)  
+- Markdown (Documentation & Source Content)  
+
+**AI and LLM Integration (Conceptual → Implementation in later stages)**
+- OpenAI / LLM APIs (for transformation and evaluation)  
+- Embedding-based retrieval (planned)  
+
+**System Design**
+- Modular Knowledge Systems  
+- Schema-driven content pipelines  
+- Content-as-code approach  
+
+**Evaluation and Quality**
+- Rule-based validation  
+- Simulation testing  
+- LLM-based evaluation frameworks (planned)  
+
+---
+
+### Upcoming Implementation (Subprojects 04–05)
+
+The following technologies will be introduced in later stages of the project:
+
+- Python (for pipeline orchestration and agent logic)  
+- LangChain / LlamaIndex (for building agent workflows and RAG pipelines)  
+- Vector Databases (FAISS / Chroma) for semantic retrieval  
+
+This progression mirrors how AI knowledge systems evolve from structured content design to fully integrated agent pipelines in production environments.
+
+---
+
 ## How the project is structured
 
 The repository is organized as a **progressive set of subprojects**, each building on the previous one _similar to how an AI product’s knowledge layer evolves in production._
