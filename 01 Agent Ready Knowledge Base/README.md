@@ -7,10 +7,10 @@ This subproject focuses on a foundational problem in AI-first systems:
 **Most documentation is written for humans, but increasingly consumed by AI.**
 
 When AI agents rely on human-oriented content, teams encounter issues such as:
-- Ambiguous instructions
-- Missing decision criteria
-- Inconsistent terminology
-- Unpredictable agent behavior
+- *Ambiguous instructions*
+- *Missing decision criteria*
+- *Inconsistent terminology*
+- *Unpredictable agent behavior*
 
 This subproject explores how to **restructure traditional documentation into agent-ready knowledge units** that are explicit, consistent, and testable.
 ![Agent Ready Knowledge Base Architecture](architecture_diagram.png)
@@ -19,12 +19,10 @@ This subproject explores how to **restructure traditional documentation into age
 
 ## What this subproject is about
 
-The goal is not to build a chatbot.
-
 The goal is to design a **knowledge layer** that:
-- AI agents can retrieve reliably
-- Models can reason over consistently
-- Teams can evaluate and improve over time
+- *AI agents can retrieve reliably*
+- *Models can reason consistently*
+- *Teams can evaluate and improve over time*
 
 This mirrors the early-stage work AI-first companies do when moving from static documentation to agent-driven systems.
 
@@ -33,21 +31,21 @@ This mirrors the early-stage work AI-first companies do when moving from static 
 ## The Problem being addressed
 
 Traditional documentation assumes:
-- A human reader
-- Context is carried implicitly
-- Interpretation handled by the reader
+- *A human reader*
+- *Context is carried implicitly*
+- *Interpretation handled by the reader*
 
 AI agents assume none of this.
 
 When agents consume the same content:
-- Implicit steps are skipped
-- Ambiguity leads to incorrect actions
-- Minor wording differences cause inconsistent outcomes
+- *Implicit steps are skipped*
+- *Ambiguity leads to incorrect actions*
+- *Minor wording differences cause inconsistent outcomes*
 
 This subproject addresses that gap by:
-- Making assumptions explicit
-- Structuring content into discrete knowledge units
-- Attaching metadata that guides AI behavior
+- *Making assumptions explicit*
+- *Structuring content into discrete knowledge units*
+- *Attaching metadata that guides AI behavior*
 
 ---
 
@@ -55,11 +53,11 @@ This subproject addresses that gap by:
 
 This subproject includes:
 
-- A sample **human-written help article**
-- A transformed **agent-ready version** of the same content
-- A **knowledge unit schema** defining structure and metadata
-- Notes on chunking and transformation decisions
-- Evaluation criteria to assess content quality
+- *A sample **human-written help article***
+- *A transformed **agent-ready version** of the same content*
+- *A **knowledge unit schema** defining structure and metadata*
+- *Notes on chunking and transformation decisions*
+- *Evaluation criteria to assess content quality*
 
 Each artifact is designed to reflect how this work happens in real AI product teams.
 
@@ -104,16 +102,16 @@ Each artifact is designed to reflect how this work happens in real AI product te
 ## What “Agent-Ready” means here
 
 In this context, agent-ready knowledge:
-- Is modular and self-contained
-- Avoids implicit assumptions
-- Uses consistent terminology
-- Includes metadata such as intent, task type, and constraints
-- Can be evaluated independently of a UI or prompt
+- *Is modular and self-contained*
+- *Avoids implicit assumptions*
+- *Uses consistent terminology*
+- *Includes metadata such as intent, task type, and constraints*
+- *Can be evaluated independently of a UI or prompt*
 
 This makes the content suitable for:
-- Retrieval-Augmented Generation (RAG)
-- Multi-step agent workflows
-- Tool-using agents
+- *Retrieval-Augmented Generation (RAG)*
+- *Multi-step agent workflows*
+- *Tool-using agents*
 
 ---
 
@@ -122,14 +120,14 @@ This makes the content suitable for:
 This is the foundation for all later subprojects.
 
 Once knowledge is:
-- Structured
-- Explicit
-- Evaluatable
+- *Structured*
+- *Explicit*
+- *Evaluatable*
 
 It becomes possible to:
-- Drive workflows through content
-- Detect inconsistencies automatically
-- Measure the impact of content changes on agent behavior
+- *Drive workflows through content*
+- *Detect inconsistencies automatically*
+- *Measure the impact of content changes on agent behavior*
 
 ---
 
