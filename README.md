@@ -47,7 +47,7 @@ This repository experiments with practical ways to:
 
 **AI and LLM Integration (Conceptual → Implementation in later stages)**
 - OpenAI / LLM APIs *(for transformation and evaluation)* 
-- Embedding-based retrieval *(planned)*  
+- Embedding-based retrieval *(planned for later stage)*  
 
 **System Design**
 - Modular Knowledge Systems  
