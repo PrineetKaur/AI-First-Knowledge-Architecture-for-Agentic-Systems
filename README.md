@@ -2,7 +2,7 @@
 
 ### Designing content that AI agents can Reason over, Act on, and be Evaluated against
 
-This repository will help you understand **"How knowledge and content role is changing in AI-first products**, where information is no longer written solely for humans but is **actively consumed by autonomous AI systems**.
+This repository will help you understand **"How knowledge and content roles are changing in companies' building AI-first products"**, *(where information is no longer written solely for humans but is **actively consumed by autonomous AI systems**.)*
 
 In traditional setups, content exists to *explain*.  
 In agentic systems, content exists to *drive behavior*.
