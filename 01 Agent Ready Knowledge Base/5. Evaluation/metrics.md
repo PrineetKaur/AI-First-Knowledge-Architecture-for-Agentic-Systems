@@ -1,10 +1,10 @@
-# Evaluation Metrics: Measuring Quality of Agent-Ready Knowledge
+# Measuring Quality of Agent-Ready Knowledge
 
 ## Why evaluation is necessary
 
 In traditional content systems, quality is judged by:
 - Readability
-- Completeness (for humans)
+- Completeness *(for humans)*
 - User satisfaction
 
 In AI-first systems, this is not enough.
@@ -15,19 +15,19 @@ Content directly influences:
 - System reliability
 
 Which means content must be:
-> **measurable, testable, and continuously evaluated**
+> **Measurable, Testable, and Continuously Evaluated**
 
 ---
 
 ## What we are evaluating
 
-This subproject evaluates whether a knowledge unit is:
+This section of the subproject evaluates whether a knowledge unit is:
 
-- Correct → factually and logically accurate  
-- Complete → contains all required steps and rules  
-- Consistent → does not conflict internally or with other units  
-- Unambiguous → clear enough for deterministic execution  
-- Safe → does not lead to harmful or incorrect actions  
+- Correct → *factually and logically accurate* 
+- Complete → *contains all required steps and rules*  
+- Consistent → *does not conflict internally or with other units*  
+- Unambiguous → *clear enough for deterministic execution*  
+- Safe → *does not lead to harmful or incorrect actions*  
 
 ---
 
@@ -113,7 +113,7 @@ Each dimension is scored independently.
 
 ---
 
-## 4. Clarity (Unambiguity)
+## 4. Clarity *(Unambiguity)*
 
 ### What it checks
 - Are instructions explicit and actionable?
@@ -124,7 +124,7 @@ Each dimension is scored independently.
 - Are conditions clearly defined?
 
 ### Failure example
-- “Go to the appropriate section” (unclear instruction)
+- “Go to the appropriate section” *(unclear instruction)*
 
 ### Scoring
 | Score | Meaning |
@@ -176,13 +176,13 @@ Each dimension is scored independently.
 ### 1. Manual review
 - Human checks against schema and real-world behavior
 
-### 2. LLM-based evaluation (future step)
+### 2. LLM-based evaluation *(future step)*
 - Use prompts to detect:
   - Contradictions
   - Missing steps
   - Ambiguity
 
-### 3. Simulation testing (future step)
+### 3. Simulation testing *(future step)*
 - Run sample queries through agent
 - Compare outputs with expected responses
 
@@ -216,7 +216,7 @@ A high-quality knowledge unit should:
 
 ### Verbosity vs clarity
 - More detailed instructions reduce ambiguity
-- But increase content size
+- But increase content size *(eventually increasing your agent cost)*
 
 ---
 
