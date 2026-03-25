@@ -78,9 +78,9 @@ Chunking requires extracting:
 ### 4. Separate concerns clearly
 
 Each knowledge unit isolates:
-- Steps (how to do it)
-- Rules (when/how decisions change)
-- Constraints (what must not be violated)
+- Steps *(how to do it)*
+- Rules *(when/how decisions change)*
+- Constraints *(what must not be violated)*
 
 This prevents agents from mixing logic incorrectly.
 
@@ -107,9 +107,9 @@ This allows:
 
 The human help article includes:
 
-- Instructions (steps to cancel)
-- Policies (refunds, access)
-- Conditions (account owner only, trial behavior)
+- Instructions *(steps to cancel)*
+- Policies *(refunds, access)*
+- Conditions *(account owner only, trial behavior)*
 - Support escalation
 
 All of these are interwoven in narrative form.
@@ -195,7 +195,7 @@ Poor chunking leads to:
 
 ## Key takeaway
 
-Chunking is not just about splitting content.
+It's important to understand that **"Chunking is not just about splitting content."**
 
 It is about **designing knowledge in a way that aligns with how AI systems think, retrieve, and act**.
 
