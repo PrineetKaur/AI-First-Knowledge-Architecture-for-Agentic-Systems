@@ -1,4 +1,4 @@
-# Transformation Notes: Converting Human Documentation into Agent-Ready Knowledge
+# Transformation Notes for converting Human Documentation into Agent-Ready Knowledge
 
 ## Purpose of this document
 
@@ -6,7 +6,7 @@ This document explains how the original human-written help article was transform
 
 The goal is not just to show the final output, but to make the **transformation process explicit and repeatable**.
 
-In real-world systems, this step is critical — because most failures in AI agents can be traced back to **how content was modeled**, not just how models were prompted.
+In real-world systems, this step is critical *(because most failures in AI agents can be traced back to **how content was modeled**, not just how models were prompted.)*
 
 ---
 
@@ -17,8 +17,8 @@ The original document:
 
 It includes:
 - Step-by-step instructions
-- Policy information (refunds, access)
-- Conditional behavior (trial vs paid)
+- Policy information *(refunds, access)*
+- Conditional behavior *(trial vs paid)*
 - Support escalation paths
 
 However, these elements are:
