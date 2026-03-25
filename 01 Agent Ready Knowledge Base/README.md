@@ -19,7 +19,7 @@ This subproject explores how to **restructure traditional documentation into age
 
 ## What this subproject is about
 
-The goal is to design a **knowledge layer** that:
+The goal is to design a **knowledge layer** from which:
 - *AI agents can retrieve reliably*
 - *Models can reason consistently*
 - *Teams can evaluate and improve over time*
