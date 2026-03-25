@@ -2,11 +2,11 @@
 
 ## Background
 
-AI-first products increasingly rely on autonomous or semi-autonomous agents to perform tasks such as answering user questions, executing workflows, and interacting with internal tools.
+AI-first products increasingly rely on **autonomous** or **semi-autonomous agents** to perform tasks such as *answering user questions, executing workflows, and interacting with internal tools*.
 
-In many organizations, these agents consume the same documentation that was originally written for human users _help articles, FAQs, internal runbooks, and policy documents._
+In many organizations, these agents consume the same documentation that was originally written for human users (*for eg: help articles, FAQs, internal runbooks, and policy documents.*)
 
-While this content works reasonably well for human readers, it breaks down when used directly by AI agents.
+**While this content works reasonably well for humans, it breaks down when used directly by AI agents.**
 
 ---
 
@@ -21,7 +21,7 @@ As a result, when AI agents consume this content, teams observe:
 - _Incorrect actions caused by ambiguous language_
 - _Difficulty tracing failures back to specific content issues_
 
-These failures are often subtle and hard to diagnose, because the content itself is assumed to be “correct” simply because it reads well to humans.
+**These failures are often subtle, but hard to diagnose, because the content itself is assumed to be “correct” simply because it reads well to humans.**
 
 ---
 
@@ -32,7 +32,7 @@ Most attempts to fix these issues focus on:
 - _More detailed instructions inside the model_
 - _Post-hoc corrections after failures occur_
 
-These approaches treat the model as the primary control mechanism, while the **knowledge layer remains unstructured and ungoverned**.
+**These approaches treat the model as the primary control mechanism, while the knowledge layer remains unstructured and ungoverned**.
 
 Without changes to how content is authored and structured:
 - _Small wording changes can have outsized effects_
@@ -53,7 +53,7 @@ to being:
 - _Explicit_
 - _Structured and testable_
 
-This means treating knowledge as a system component rather than a static artifact.
+**This means treating knowledge as a system component rather than a static artifact.**
 
 ---
 
@@ -66,8 +66,7 @@ This subproject focuses specifically on:
 - _Demonstrating how a single help article can be transformed into structured knowledge units_
 - _Establishing a baseline for evaluating content quality and consistency_
 
-It does not aim to build a full agent or production system.  
-Instead, it lays the groundwork required for reliable agent behavior in later stages.
+Note: *We are not aiming to build a full agent or production system here. Instead, just lay the groundwork required for reliable agent behavior in later stages.*
 
 ---
 
@@ -80,7 +79,7 @@ Without agent-ready knowledge:
 - _Failures are difficult to debug_
 - _Teams over-rely on prompt tuning instead of system design_
 
-Solving this problem is a prerequisite for building AI systems that are predictable, safe, and scalable.
+**Solving this problem is a prerequisite for building AI systems that are predictable, safe, and scalable.**
 
 ---
 
@@ -93,4 +92,4 @@ By the end of this subproject, you should have:
 - _A repeatable approach for transforming content_
 - _Criteria to evaluate whether knowledge is suitable for AI consumption_
 
-These outcomes form the foundation for workflow-driven and tool-using agents in later subprojects.
+These outcomes form the **foundation for workflow-driven** and **tool-using agents** in later subprojects.
