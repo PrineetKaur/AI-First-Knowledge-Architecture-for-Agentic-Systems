@@ -178,4 +178,4 @@ This mirrors how these systems typically evolve in production.
 
 ## What comes next
 
-The first subproject focuses on building an **agent-ready knowledge base** — turning human-oriented documentation into structured, testable knowledge that AI agents can reliably use.
+The first subproject focuses on building an **agent-ready knowledge base** *(turning human-oriented documentation into structured, testable knowledge that AI agents can reliably use.)*
