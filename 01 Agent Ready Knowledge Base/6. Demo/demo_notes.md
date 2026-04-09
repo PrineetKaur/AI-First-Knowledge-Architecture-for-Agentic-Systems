@@ -72,7 +72,7 @@ Explain:
 - Makes knowledge testable and reusable
 
 👉 Key line:
-> “This is similar to how APIs use schemas — here we’re doing it for content.”
+> “This is similar to how APIs use schemas, just that here we’re doing it for content.”
 
 ---
 
@@ -83,8 +83,8 @@ Show:
 
 Explain:
 
-- Content is not assumed to be correct — it is evaluated
-- Each dimension is scored:
+- Content is evaluated regularly on various dimensions and scored on a scale of 1-5
+- Each of the following dimensions are scored:
   - Accuracy
   - Completeness
   - Consistency
