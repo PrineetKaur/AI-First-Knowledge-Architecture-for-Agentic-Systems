@@ -2,7 +2,7 @@
 
 ## Purpose of this demo
 
-This document walks you through the system for demos, stakeholder reviews, and a quick overview of how a traditional help article becomes structured knowledge an AI agent can use reliably.
+This document walks you through the system for demos, stakeholder reviews, and a quick overview of how a traditional help article is structured into knowledge an AI agent can use reliably.
 
 The goal is to show:
 - Why human documentation fails for AI systems
