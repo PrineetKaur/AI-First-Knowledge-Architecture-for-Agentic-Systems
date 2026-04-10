@@ -1,13 +1,13 @@
-# Demo Notes: Agent-Ready Knowledge Base
+# Demo & Walkthrough: Agent-Ready Knowledge Base
 
 ## Purpose of this demo
 
-This demo walks through how a traditional help article is transformed into structured knowledge that an AI agent can reliably use.
+This document walks you through the system for demos, stakeholder reviews, and a quick overview of how a traditional help article becomes structured knowledge an AI agent can use reliably.
 
 The goal is to show:
 - Why human documentation fails for AI systems
 - How restructuring content improves reliability
-- How knowledge can be evaluated like a system component
+- How knowledge can be evaluated as a system component
 
 ---
 
