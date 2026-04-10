@@ -29,7 +29,7 @@ Call out examples:
 - Refund policy → buried in text
 - Steps → lack validation or conditions
 
-👉 Key line to say:
+👉 Key point to emphasise:
 > “This looks correct to a human, but an AI agent can easily misinterpret or skip critical logic.”
 
 ---
@@ -55,7 +55,7 @@ Highlight:
 - Constraints (refund policy)
 - Risk + governance (not present before)
 
-👉 Key line:
+👉 Key pointer:
 > “Instead of relying on the model to infer logic, we encode that logic directly into the content.”
 
 ---
@@ -71,7 +71,7 @@ Explain:
 - Ensures consistency across all content
 - Makes knowledge testable and reusable
 
-👉 Key line:
+👉 Key pointer:
 > “This is similar to how APIs use schemas, just that here we’re doing it for content.”
 
 ---
@@ -91,7 +91,7 @@ Explain:
   - Clarity
   - Safety
 
-👉 Key line:
+👉 Key pointer:
 > “In AI systems, content quality directly impacts system behavior, so it needs to be measurable.”
 
 ---
@@ -105,40 +105,8 @@ Summarize:
 - To:
   - Structured, testable, agent-consumable knowledge
 
-👉 Final line:
+👉 Key pointer:
 > “This is the foundation required before you can build reliable agent workflows or tool-using systems.”
-
----
-
-## Optional demo extension (if asked)
-
-If the interviewer asks deeper questions, you can extend:
-
-### Why not just use better prompts?
-- Prompts don’t fix inconsistent or incomplete knowledge
-- Content needs to be reliable before prompting
-
----
-
-### Why not just use RAG?
-- RAG improves retrieval, not content quality
-- Poor content retrieved is still poor input
-
----
-
-### How would this scale?
-- Shared schema across teams
-- Versioning + governance
-- Automated evaluation pipelines
-
----
-
-## Key talking points to remember
-
-- “Content becomes part of the system, not just documentation.”
-- “We reduce ambiguity instead of expecting the model to handle it.”
-- “We make implicit logic explicit.”
-- “We evaluate content like we evaluate code.”
 
 ---
 
@@ -152,7 +120,3 @@ This subproject demonstrates:
 - Product thinking applied to content systems
 
 ---
-
-## One-line summary (if needed)
-
-> “I redesigned a human help article into a structured, evaluable knowledge unit that an AI agent can reliably execute against.”
