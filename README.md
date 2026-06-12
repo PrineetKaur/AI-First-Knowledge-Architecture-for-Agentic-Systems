@@ -2,7 +2,7 @@
 
 ### Designing content that AI agents can Reason over, Act on, and be Evaluated against
 
-This repository will help you understand **how the knowledge designer role is changing to knowledge architect in AI-first companies**, *(as information is no longer written solely for humans but is actively consumed by autonomous AI systems).*
+This repository will help you understand **how the knowledge designer role is changing to knowledge architect in AI-first companies**, *(as information is no longer written solely designed for humans but is actively consumed by autonomous AI systems).*
 
 In traditional setups, content existed to *explain*.  
 In agentic systems, content exists to *drive behavior*.
