@@ -2,7 +2,7 @@
 
 ### Designing content that AI agents can Reason over, Act on, and be Evaluated against
 
-This repository will help you understand **"How knowledge and content roles are changing in companies' building AI-first products"**, *(where information is no longer written solely for humans but is **actively consumed by autonomous AI systems**.)*
+This repository will help you understand **"How knowledge and content roles work are changing in companies building AI-first products"**, *(where information is no longer written solely for humans but is **actively consumed by autonomous AI systems**.)*
 
 In traditional setups, content existed to *explain*.  
 In agentic systems, content exists to *drive behavior*.
@@ -104,10 +104,10 @@ Each subproject can be explored independently, but together they form a **cohesi
 ## Subprojects overview
 
 ### 1. Agent-Ready Knowledge Base
-Reworks traditional documentation into **structured, metadata-rich knowledge units** optimized for retrieval, reasoning, and task execution by AI agents.
+Reworks traditional documentation into structured, metadata-rich knowledge units optimized for retrieval and reasoning by the AI agents.
 
-### 2. Agent Workflow Playbooks
-Explores how **content can define workflows**, allowing agents to follow structured, step-by-step instructions instead of relying on prompt improvisation.
+### 2. Agent Execution Workflows
+Designs structured execution workflows that help AI agents make consistent decisions, follow business processes, and take approved actions.
 
 ### 3. Knowledge Quality & Consistency Evaluator
 Introduces automated checks to identify contradictions, missing steps, ambiguity, and unsafe instructions in AI-consumed content.
@@ -120,7 +120,7 @@ Demonstrates how agents combine structured knowledge with tool usage to perform 
 
 ---
 
-## Why this mirrors real production work
+## Why this project mirrors real production work
 
 Each subproject is designed the way it would be inside an actual AI product team:
 
@@ -173,9 +173,3 @@ Each subproject is built incrementally:
 - Finally, evaluation and iteration
 
 This mirrors how these systems typically evolve in production.
-
----
-
-## What comes next
-
-The first subproject focuses on building an **agent-ready knowledge base** *(turning human-oriented documentation into structured, testable knowledge that AI agents can reliably use.)*
