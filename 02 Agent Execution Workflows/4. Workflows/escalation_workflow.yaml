@@ -1,0 +1,83 @@
+workflow_id: WF-003
+name: Human Escalation Workflow
+description: Escalate requests requiring human review.
+version: 1.0
+status: active
+
+metadata:
+  domain: Customer Support
+  owner: Support Operations
+  last_updated: 2026-06-17
+  tags:
+    - escalation
+    - human_review
+    - governance
+
+goal:
+  description: Transfer requests that cannot be safely resolved by the agent.
+  success_criteria:
+    - Escalation conditions identified
+    - Request transferred appropriately
+
+inputs:
+  required:
+    - name: case_id
+      description: Unique case identifier
+      type: string
+
+    - name: escalation_reason
+      description: Reason for escalation
+      type: string
+
+states:
+  - state_id: S1
+    name: Evaluate Request
+    description: Determine whether escalation is required
+    type: start
+
+  - state_id: S2
+    name: Escalate Request
+    description: Transfer request to human review
+    type: escalation
+
+  - state_id: S3
+    name: Workflow Complete
+    description: End workflow
+    type: terminal
+
+decision_rules:
+  - rule_id: R1
+    description: Policy exception identified
+    condition: policy_exception = true
+    outcome: escalate
+
+  - rule_id: R2
+    description: Low confidence response
+    condition: confidence_score < threshold
+    outcome: escalate
+
+transitions:
+  - from_state: S1
+    to_state: S2
+    condition: escalation required
+
+  - from_state: S2
+    to_state: S3
+    condition: handoff completed
+
+exceptions:
+  - exception_id: EX1
+    trigger: Human reviewer unavailable
+    resolution: Create support queue entry
+
+escalation:
+  required: true
+  conditions:
+    - policy_exception
+    - low_confidence
+  target: Support Specialist
+
+outcomes:
+  - outcome_id: O1
+    description: Request escalated
+    type: escalated
