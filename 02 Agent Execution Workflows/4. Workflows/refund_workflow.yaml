@@ -1,0 +1,92 @@
+workflow_id: WF-001
+name: Customer Refund Request
+description: Process customer refund requests according to refund policy.
+version: 1.0
+status: active
+
+metadata:
+  domain: Customer Support
+  owner: Support Operations
+  last_updated: 2026-06-17
+  tags:
+    - refund
+    - support
+    - customer_service
+
+goal:
+  description: Determine whether a refund request should be approved.
+  success_criteria:
+    - Customer eligibility determined
+    - Appropriate outcome returned
+
+inputs:
+  required:
+    - name: order_number
+      description: Unique order identifier
+      type: string
+
+    - name: purchase_date
+      description: Date of purchase
+      type: date
+
+    - name: refund_reason
+      description: Reason for requesting refund
+      type: string
+
+states:
+  - state_id: S1
+    name: Collect Information
+    description: Gather required refund information
+    type: start
+
+  - state_id: S2
+    name: Evaluate Eligibility
+    description: Determine refund eligibility
+    type: decision
+
+  - state_id: S3
+    name: Process Refund
+    description: Approve refund request
+    type: action
+
+  - state_id: S4
+    name: Workflow Complete
+    description: End workflow
+    type: terminal
+
+decision_rules:
+  - rule_id: R1
+    description: Refund allowed within 30 days
+    condition: purchase_date <= 30 days
+    outcome: eligible
+
+  - rule_id: R2
+    description: Refund period exceeded
+    condition: purchase_date > 30 days
+    outcome: denied
+
+transitions:
+  - from_state: S1
+    to_state: S2
+    condition: required inputs collected
+
+  - from_state: S2
+    to_state: S3
+    condition: eligible
+
+  - from_state: S2
+    to_state: S4
+    condition: denied
+
+  - from_state: S3
+    to_state: S4
+    condition: refund processed
+
+outcomes:
+  - outcome_id: O1
+    description: Refund approved
+    type: success
+
+  - outcome_id: O2
+    description: Refund denied
+    type: denied
