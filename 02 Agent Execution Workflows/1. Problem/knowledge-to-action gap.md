@@ -129,7 +129,7 @@ Organizations need behavior that is:
 * Predictable
 * Repeatable
 * Governable
-* Evaluatable
+* Evaluable
 
 Prompt improvisation alone cannot guarantee these properties.
 
@@ -151,9 +151,9 @@ At a high level:
 
 ```text
 Knowledge
-        ↓
+    ↓
 Execution Workflow
-        ↓
+    ↓
 Agent Actions
 ```
 
