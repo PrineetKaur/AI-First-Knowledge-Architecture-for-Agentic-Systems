@@ -125,11 +125,11 @@ Possible outcomes:
 ### Workflow
 
 ```text
-Evaluate Request
-        ↓
-Decision
-     ┌────┼────┐
-     ↓    ↓    ↓
+  Evaluate Request
+         ↓
+      Decision
+    ┌────┼────┐
+    ↓    ↓    ↓
 Approve Deny Escalate
 ```
 
@@ -163,7 +163,7 @@ Evaluate Situation
         ↓
 Escalation Required?
         ↓
-Yes
+       Yes
         ↓
 Transfer to Human Review
 ```
@@ -192,12 +192,12 @@ Handle unexpected situations without breaking workflow execution.
 ### Workflow
 
 ```text
-Execute Step
-        ↓
-Failure?
-     ┌───┴───┐
-     ↓       ↓
-No         Handle Exception
+     Execute Step
+          ↓
+       Failure?
+      ┌───┴───┐
+      ↓       ↓
+     No    Handle Exception
 ```
 
 ### Why It Matters
@@ -219,13 +219,13 @@ Represent processes that require multiple decisions.
 Refund processing:
 
 ```text
-Verify Order
-        ↓
-Check Eligibility
-        ↓
+     Verify Order
+          ↓
+   Check Eligibility
+          ↓
 Validate Payment Information
-        ↓
-Approve Refund
+          ↓
+    Approve Refund
 ```
 
 ### Why It Matters
@@ -252,7 +252,7 @@ Define how workflows finish.
 ### Workflow
 
 ```text
-Decision
+       Decision
      ┌────┼────┐
      ↓    ↓    ↓
 Complete Deny Escalate
@@ -290,16 +290,16 @@ Terminal Outcome
 
 ```text
 Information Collection
-        ↓
+          ↓
 Eligibility Evaluation
-        ↓
-Multi-Step Approval
-        ↓
-Decision Branching
-        ↓
-Escalation
-        ↓
-Terminal Outcome
+          ↓
+ Multi-Step Approval
+          ↓
+  Decision Branching
+          ↓
+     Escalation
+          ↓
+   Terminal Outcome
 ```
 
 Complex workflows are often compositions of smaller reusable patterns.
