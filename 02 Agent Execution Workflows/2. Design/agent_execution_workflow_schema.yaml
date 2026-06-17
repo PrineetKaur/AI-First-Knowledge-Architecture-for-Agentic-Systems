@@ -1,0 +1,84 @@
+# agent_execution_workflow_schema.yaml
+
+workflow_id: string
+name: string
+description: string
+version: string
+status: draft | active | deprecated
+
+metadata:
+  domain: string
+  owner: string
+  last_updated: date
+  tags:
+    - string
+
+goal:
+  description: string
+  success_criteria:
+    - string
+
+inputs:
+  required:
+    - name: string
+      description: string
+      type: string
+
+  optional:
+    - name: string
+      description: string
+      type: string
+
+states:
+  - state_id: string
+    name: string
+    description: string
+    type:
+      - start
+      - action
+      - decision
+      - escalation
+      - terminal
+
+actions:
+  - action_id: string
+    description: string
+    performed_in_state: string
+
+decision_rules:
+  - rule_id: string
+    description: string
+    condition: string
+    outcome: string
+
+transitions:
+  - from_state: string
+    to_state: string
+    condition: string
+
+exceptions:
+  - exception_id: string
+    trigger: string
+    resolution: string
+
+escalation:
+  required: boolean
+  conditions:
+    - string
+  target: string
+
+outcomes:
+  - outcome_id: string
+    description: string
+    type:
+      - success
+      - denied
+      - escalated
+      - failed
+
+evaluation:
+  metrics:
+    - workflow_completion
+    - decision_accuracy
+    - required_input_collection
+    - escalation_accuracy
