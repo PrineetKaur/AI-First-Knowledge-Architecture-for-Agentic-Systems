@@ -1,0 +1,88 @@
+workflow_id: WF-002
+name: Order Cancellation Request
+description: Determine whether an order can be cancelled.
+version: 1.0
+status: active
+
+metadata:
+  domain: Order Management
+  owner: Commerce Operations
+  last_updated: 2026-06-17
+  tags:
+    - cancellation
+    - orders
+    - support
+
+goal:
+  description: Determine cancellation eligibility and process the request.
+  success_criteria:
+    - Cancellation eligibility evaluated
+    - Appropriate action taken
+
+inputs:
+  required:
+    - name: order_number
+      description: Unique order identifier
+      type: string
+
+    - name: order_timestamp
+      description: Order creation time
+      type: datetime
+
+states:
+  - state_id: S1
+    name: Collect Information
+    description: Gather order information
+    type: start
+
+  - state_id: S2
+    name: Check Eligibility
+    description: Determine whether cancellation is allowed
+    type: decision
+
+  - state_id: S3
+    name: Cancel Order
+    description: Process cancellation
+    type: action
+
+  - state_id: S4
+    name: Workflow Complete
+    description: End workflow
+    type: terminal
+
+decision_rules:
+  - rule_id: R1
+    description: Cancellation allowed within 30 minutes
+    condition: order_age <= 30 minutes
+    outcome: eligible
+
+  - rule_id: R2
+    description: Cancellation window exceeded
+    condition: order_age > 30 minutes
+    outcome: denied
+
+transitions:
+  - from_state: S1
+    to_state: S2
+    condition: order information available
+
+  - from_state: S2
+    to_state: S3
+    condition: eligible
+
+  - from_state: S2
+    to_state: S4
+    condition: denied
+
+  - from_state: S3
+    to_state: S4
+    condition: cancellation completed
+
+outcomes:
+  - outcome_id: O1
+    description: Order cancelled
+    type: success
+
+  - outcome_id: O2
+    description: Cancellation denied
+    type: denied
