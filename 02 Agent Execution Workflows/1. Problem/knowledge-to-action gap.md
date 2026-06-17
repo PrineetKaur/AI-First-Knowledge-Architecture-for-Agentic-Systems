@@ -204,10 +204,10 @@ The resulting workflows become an operational layer that bridges the gap between
 
 ---
 
-## Next Step
+## Next step within this subproject
 
-The next step is to define what an execution workflow is, how it differs from knowledge, and the design principles required to make workflows reliably consumable by AI agents.
+The next step is to define what an execution workflow is and identify the characteristics that make workflows reliably consumable by AI agents.
 
-This will be explored in:
+That will live in:
 
-`workflow_design/workflow_vs_knowledge.md`
+`workflow_design/what_is_an_execution_workflow.md`
