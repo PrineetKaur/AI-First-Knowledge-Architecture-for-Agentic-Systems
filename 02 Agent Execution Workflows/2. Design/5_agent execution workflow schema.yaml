@@ -1,4 +1,4 @@
-# agent_execution_workflow_schema.yaml
+# Schema for representing agent execution workflows
 
 workflow_id: string
 name: string
@@ -6,6 +6,7 @@ description: string
 version: string
 status: draft | active | deprecated
 
+# Governance and ownership information
 metadata:
   domain: string
   owner: string
@@ -13,22 +14,25 @@ metadata:
   tags:
     - string
 
+# Workflow objective and success definition
 goal:
   description: string
   success_criteria:
     - string
 
+# Information required for execution
 inputs:
   required:
     - name: string
       description: string
       type: string
-
-  optional:
+      
+ optional:
     - name: string
       description: string
       type: string
 
+# Workflow states
 states:
   - state_id: string
     name: string
@@ -40,33 +44,39 @@ states:
       - escalation
       - terminal
 
+# Agent actions
 actions:
   - action_id: string
     description: string
     performed_in_state: string
 
+# Decision rules
 decision_rules:
   - rule_id: string
     description: string
     condition: string
     outcome: string
 
+# State transitions
 transitions:
   - from_state: string
     to_state: string
     condition: string
 
+# Exception handling
 exceptions:
   - exception_id: string
     trigger: string
     resolution: string
 
+# Escalation rules
 escalation:
   required: boolean
   conditions:
     - string
   target: string
 
+# Terminal outcomes
 outcomes:
   - outcome_id: string
     description: string
@@ -76,6 +86,7 @@ outcomes:
       - escalated
       - failed
 
+# Evaluation metrics
 evaluation:
   metrics:
     - workflow_completion
