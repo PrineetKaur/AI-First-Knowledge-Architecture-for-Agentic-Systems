@@ -50,7 +50,7 @@ This repository experiments with practical ways to:
 - Embedding-based retrieval *(planned for later stage)*  
 
 **System Design**
-- Modular Knowledge Systems  
+- Modular knowledge systems  
 - Schema-driven content pipelines  
 - Content-as-code approach  
 
@@ -120,7 +120,7 @@ Demonstrates how agents combine structured knowledge with tool usage to perform 
 
 ---
 
-## Why this project mirrors real production work
+## How each project stage mirrors real production work
 
 Each subproject is designed the way it would be inside an actual AI product team:
 
