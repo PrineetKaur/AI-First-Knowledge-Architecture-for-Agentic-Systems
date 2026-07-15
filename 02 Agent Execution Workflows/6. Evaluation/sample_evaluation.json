@@ -1,0 +1,64 @@
+{
+  "workflow_id": "WF-001",
+  "workflow_name": "Customer Refund Request",
+  "evaluation_date": "2026-06-17",
+  "reviewer": "Knowledge Systems Team",
+
+  "overall_score": 4.6,
+
+  "metrics": {
+    "goal_clarity": {
+      "score": 5,
+      "comments": "Workflow objective and success criteria are clearly defined."
+    },
+
+    "input_completeness": {
+      "score": 5,
+      "comments": "All required inputs are explicitly documented."
+    },
+
+    "decision_explicitness": {
+      "score": 5,
+      "comments": "Business rules are represented as explicit decision rules."
+    },
+
+    "workflow_structure": {
+      "score": 5,
+      "comments": "Workflow follows a clear sequence of states and transitions."
+    },
+
+    "exception_handling": {
+      "score": 4,
+      "comments": "Common exceptions are handled, with room for additional edge cases."
+    },
+
+    "outcome_definition": {
+      "score": 5,
+      "comments": "Terminal outcomes are clearly defined."
+    },
+
+    "reusability": {
+      "score": 4,
+      "comments": "Workflow is reusable across interfaces and AI agents."
+    },
+
+    "governance_readiness": {
+      "score": 4,
+      "comments": "Workflow includes ownership, versioning, and lifecycle metadata."
+    }
+  },
+
+  "strengths": [
+    "Clear workflow objective",
+    "Explicit decision rules",
+    "Well-defined workflow states",
+    "Reusable workflow structure"
+  ],
+
+  "improvement_opportunities": [
+    "Expand exception handling for additional business scenarios.",
+    "Include workflow performance metrics as the system evolves."
+  ],
+
+  "recommendation": "Approved as a reusable workflow definition."
+}
