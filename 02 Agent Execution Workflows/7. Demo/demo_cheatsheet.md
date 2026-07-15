@@ -171,4 +171,4 @@ This subproject demonstrates:
 - Ability to model business processes as structured workflow assets
 - Knowledge architecture beyond static documentation
 - Governance thinking for AI-first content systems
-- Product thinking applied to agent behavior
+- Knowledge architecture applied to agent workflows
