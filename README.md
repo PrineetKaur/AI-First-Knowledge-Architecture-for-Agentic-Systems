@@ -80,11 +80,11 @@ The repository is organized as a **progressive set of subprojects**, each buildi
 ```
 AI-First-Knowledge-Architecture/
 │
-├── 01 Agent Ready Knowledge Base/                    # Knowledge Architecture (Stage where knowledge is structured)
-├── 02 Agent Execution Workflows/                     # Behavior Architecture  (Stage where behavior is structured)
-├── 03 Knowledge Quality Evaluator/                   # Quality & Evaluation  (Stage where quality is measured)
-├── 04 AI Optimized FAQ Pipeline/                     # Content Operations  (Stage where content production is scaled)
-├── 05 Tool Using Agent System/                       # Tool-Using Agents  (Stage where agents can act on external systems)
+├── 01 Agent Ready Knowledge Base/          # Knowledge Architecture (knowledge is structured)
+├── 02 Agent Execution Workflows/           # Behavior Architecture  (behavior is structured)
+├── 03 Knowledge Quality Evaluator/         # Quality & Evaluation  (quality is measured)
+├── 04 AI Optimized FAQ Pipeline/           # Content Operations  (content production is scaled)
+├── 05 Tool Using Agent System/             # Tool-Using Agents  (allows agents to act on external systems)
 │
 ├── Shared/
 │   ├── schemas/
