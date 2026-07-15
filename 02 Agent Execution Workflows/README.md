@@ -7,6 +7,7 @@ Subproject 01 focused on helping AI agents understand knowledge.
 But understanding knowledge is not the same as taking the right action.
 
 An AI agent may know:
+
 - *Company policies*
 - *Business rules*
 - *Product information*
@@ -42,7 +43,7 @@ This includes defining:
 - *Required inputs*
 - *Business rules*
 - *Escalation paths*
-- *Execution logic*
+- *Workflow outcomes*
 
 The result is a set of structured workflow definitions that guide agent behavior across common business processes.
 
@@ -87,15 +88,15 @@ This subproject addresses that gap by:
 
 This subproject includes:
 
-- *A workflow design framework for AI agents*
-- *A reusable workflow schema*
-- *Example execution workflows*
-- *Execution and state management models*
-- *Before-and-after workflow examples*
-- *Workflow evaluation criteria*
-- *Failure mode analysis and governance considerations*
+- *A real-world problem statement highlighting the knowledge-to-action gap*
+- *Workflow design principles and reusable workflow patterns*
+- *A machine-readable workflow schema*
+- *Representative execution workflow definitions*
+- *Workflow governance guidelines*
+- *Workflow quality evaluation metrics*
+- *A short demo walkthrough*
 
-Each artifact is designed to reflect how workflow design may be approached within real AI product and operations teams.
+Each artifact is designed to reflect how workflow design and governance are approached within AI-first product and knowledge teams.
 
 ---
 
@@ -109,35 +110,27 @@ Each artifact is designed to reflect how workflow design may be approached withi
 ├── problem/
 │   └── knowledge_to_action_gap.md
 │
-├── workflow_design/
+├── design/
+│   ├── what_is_an_execution_workflow.md
 │   ├── workflow_principles.md
 │   ├── workflow_vs_knowledge.md
 │   └── workflow_patterns.md
 │
 ├── schemas/
-│   └── workflow_schema.yaml
+│   └── agent_execution_workflow_schema.yaml
 │
 ├── workflows/
 │   ├── refund_workflow.yaml
 │   ├── cancellation_workflow.yaml
 │   └── escalation_workflow.yaml
 │
-├── execution/
-│   ├── execution_model.md
-│   ├── state_management.md
-│   └── decision_handling.md
-│
-├── examples/
-│   ├── human_process_example.md
-│   ├── naive_agent_behavior.md
-│   └── workflow_driven_agent.md
+├── governance/
+│   ├── workflow_authoring_guidelines.md
+│   └── workflow_versioning.md
 │
 ├── evaluation/
 │   ├── workflow_metrics.md
 │   └── sample_evaluation.json
-│
-├── failure_modes/
-│   └── workflow_failure_patterns.md
 │
 └── demo/
     └── demo_notes.md
@@ -154,13 +147,13 @@ In this context, an execution workflow:
 - *Identifies required information*
 - *Defines workflow entry and exit conditions*
 - *Includes escalation and exception handling paths*
-- *Can be tested independently of prompts and user interfaces*
+- *Can be evaluated independently of prompts and user interfaces*
 
 This makes workflows suitable for:
 
-- *Agent orchestration systems*
 - *Customer support automation*
 - *AI operations platforms*
+- *Agent orchestration systems*
 - *Multi-step business processes*
 
 ---
@@ -169,39 +162,43 @@ This makes workflows suitable for:
 
 Subproject 01 established the knowledge foundation.
 
-This project introduces the operational layer that uses that knowledge.
+This project introduces the behavioral layer that uses that knowledge to guide agent actions.
 
 Once workflows are:
 
 - *Structured*
 - *Reusable*
-- *Evaluatable*
+- *Governed*
 
 It becomes possible to:
 
-- ***Drive agent behavior through governed workflows***
-- ***Measure workflow performance***
+- ***Drive agent behavior through explicit workflows***
 - ***Reduce inconsistent agent decisions***
-- ***Scale operational processes across multiple agents***
+- ***Standardize operational processes***
+- ***Prepare workflows for quality evaluation***
 
-Together, Subproject 01 and Subproject 02 establish the foundation of an AI-first content system.
+Together, Subproject 01 and Subproject 02 establish the foundation of an AI-first knowledge system.
 
 ### Subproject 01
 
-Knowledge Architecture
+**Knowledge Architecture**
+
+Structured knowledge that AI agents can retrieve and reason over.
 
 ### Subproject 02
 
-Behavior Architecture
+**Behavior Architecture**
+
+Structured workflows that guide AI agent decisions and actions.
 
 Together, they enable agents to:
 
 - *Retrieve the right information*
 - *Apply business rules consistently*
-- *Execute approved workflows*
-- *Produce measurable outcomes*
+- *Follow approved workflows*
+- *Produce predictable outcomes*
 
-This foundation will support later subprojects focused on evaluation, content operations, and tool-using agents.
+The next subproject builds on this foundation by introducing a systematic approach to evaluating the quality of both knowledge and workflow assets.
 
 ---
 
@@ -209,4 +206,6 @@ This foundation will support later subprojects focused on evaluation, content op
 
 The next step is to define the gap between knowledge availability and workflow execution.
 
-That will live in: `problem/knowledge_to_action_gap.md`
+That will live in:
+
+`problem/knowledge_to_action_gap.md`
