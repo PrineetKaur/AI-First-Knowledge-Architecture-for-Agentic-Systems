@@ -1,4 +1,4 @@
-# Problem Statement: The Knowledge-to-Action Gap
+# The Knowledge-to-Action Gap
 
 ## Background
 
