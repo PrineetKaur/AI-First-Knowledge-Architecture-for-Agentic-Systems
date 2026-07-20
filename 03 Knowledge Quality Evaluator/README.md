@@ -38,7 +38,7 @@ This includes defining:
 - *Governance practices*
 - *Continuous improvement processes*
 
-The result is a reusable evaluation framework that allows teams to review knowledge and workflow assets consistently rather than relying on subjective judgement.
+The result is a reusable evaluation and governance framework that allows teams to assess, review, and continuously improve AI-ready knowledge assets using consistent criteria rather than subjective judgement.
 
 This mirrors the type of work Knowledge Operations and AI Governance teams perform when maintaining production AI knowledge systems.
 
