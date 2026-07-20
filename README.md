@@ -2,9 +2,7 @@
 
 ### Designing knowledge systems that AI agents can retrieve, act on, evaluate, and govern
 
-As organizations adopt autonomous AI systems, knowledge is no longer created solely for human readers. It must also be structured so AI agents can retrieve it, reason over it, execute approved workflows, and operate consistently.
-
-This repository demonstrates how traditional documentation can be evolved into governed knowledge systems that support reliable AI behavior. 
+As organizations adopt autonomous AI systems, knowledge is no longer created solely for human readers. It must also be structured so AI agents can retrieve it, reason over it, execute approved workflows, and operate consistently. This repository demonstrates how traditional documentation can be evolved into governed knowledge systems that support reliable AI behavior. 
 
 Rather than treating content as static documentation, the project treats knowledge as a **first-class system asset** *(structured, versioned, evaluated, and continuously improved throughout its lifecycle)*.
 
