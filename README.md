@@ -56,8 +56,8 @@ Rather than demonstrating AI model implementation, this repository focuses on th
 
 ### Quality Architecture
 
-- Measuring the quality of knowledge and workflow assets
-- Defining evaluation frameworks and governance practices
+- Measuring the quality and governance readiness of knowledge and workflow assets
+- Defining reusable evaluation frameworks and review processes
 - Supporting continuous improvement through structured assessment
 
 ### Content Operations
