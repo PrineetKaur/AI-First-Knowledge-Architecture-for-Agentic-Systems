@@ -118,7 +118,7 @@ Introduces automated checks to identify contradictions, missing steps, ambiguity
 
 **Core Question Addressed:** *How do we measure and govern the quality of AI-ready assets?*
 
-### 4. AI-Optimized FAQ Pipeline
+### 4. AI Content Operations Pipeline
 Builds a closed-loop system where FAQs are generated, tested through simulated queries, evaluated, and iteratively improved.
 
 **Core Question Addressed:** *How do we produce and maintain AI-ready content at scale?*
