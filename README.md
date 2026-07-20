@@ -69,7 +69,7 @@ The following technologies will be introduced in later stages of the project:
 - LangChain / LlamaIndex *(for building agent workflows and RAG pipelines)*  
 - Vector Databases *(FAISS / Chroma)* for semantic retrieval  
 
-**This progression has been planned in a manner to mirror **how real-life AI knowledge systems evolve from structured content design to fully integrated agent pipelines in production environments.**
+This progression has been planned in a manner to mirror **how real-life AI knowledge systems evolve from structured content design to fully integrated agent pipelines in production environments**.
 
 ---
 
