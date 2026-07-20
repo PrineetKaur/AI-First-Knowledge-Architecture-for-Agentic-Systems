@@ -118,7 +118,7 @@ Designs structured execution workflows that help AI agents make consistent decis
 **Core Question Addressed:** *How do we guide AI agents to act consistently?*
 
 ### 3. Knowledge Quality Evaluator
-Introduces a reusable evaluation framework for measuring the quality, consistency, and governance readiness of AI-ready knowledge and workflow assets.
+Introduces a reusable knowledge governance framework for evaluating the quality, consistency, and governance readiness of AI-ready knowledge and workflow assets.
 
 **Core Question Addressed:** *How do we measure and govern the quality of AI-ready assets?*
 
