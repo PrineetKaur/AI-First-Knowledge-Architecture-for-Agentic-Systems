@@ -1,90 +1,211 @@
 # Measuring AI Knowledge Quality
 
-## The problem
+## Background
 
-Organizations investing in AI-ready knowledge often focus heavily on creating structured content and execution workflows.
+Subproject 01 demonstrated how traditional documentation can be transformed into structured, agent-ready knowledge.
 
-However, simply producing these assets does not guarantee they are suitable for reliable AI use.
+Subproject 02 introduced execution workflows that guide AI agents through explicit business processes.
 
-Two knowledge assets may appear equally complete to a human reviewer while producing very different outcomes when consumed by an AI agent.
+Together, these two layers provide:
+
+* Structured knowledge
+* Explicit workflows
+* Consistent terminology
+* Governed operational logic
+
+This significantly improves an agent's ability to retrieve information and execute approved actions.
+
+However, another challenge remains.
+
+**Creating structured assets does not guarantee they are high quality.**
+
+---
+
+## The Quality Gap
+
+Consider two knowledge assets.
+
+Both:
+
+* Follow the same schema
+* Contain complete metadata
+* Pass basic validation checks
+
+Yet one contains ambiguous business rules, while the other defines every decision explicitly.
+
+Likewise, two execution workflows may contain identical steps, but one omits an important exception path.
+
+Structurally, both assets appear valid.
+
+Operationally, they are not equally reliable.
+
+The problem is no longer creating structured knowledge.
+
+The problem is determining whether that knowledge is actually suitable for AI consumption.
+
+---
+
+## Why This Matters
+
+Human reviewers naturally identify many quality issues through experience.
+
+For example, they may notice that:
+
+* Important context is missing.
+* Decision criteria are unclear.
+* Business rules contradict one another.
+* A workflow feels incomplete.
+
+AI agents cannot reliably make these judgements.
+
+As organizations scale AI-ready knowledge across hundreds or thousands of assets, relying solely on manual reviews becomes increasingly difficult.
+
+Without consistent evaluation standards:
+
+* Content quality varies between authors.
+* Governance becomes subjective.
+* Quality improvements become difficult to measure.
+* AI behavior becomes less predictable over time.
+
+---
+
+## Example
+
+### Knowledge Asset A
+
+```text
+Customers may receive a refund for eligible purchases.
+```
+
+### Knowledge Asset B
+
+```text
+Customers may receive a refund within 30 days of purchase if payment has been successfully captured and no shipment has occurred.
+```
+
+Both statements describe the same policy.
+
+However:
+
+### Asset A
+
+* Missing eligibility criteria
+* Ambiguous decision rules
+* Difficult for an AI agent to apply consistently
+
+### Asset B
+
+* Explicit business constraints
+* Clearly defined conditions
+* Suitable for reliable agent decision-making
+
+Both assets are structurally valid.
+
+Only one demonstrates high operational quality.
+
+---
+
+## Why Structure Alone Is Not Enough
+
+A common assumption is that structured schemas automatically produce high-quality knowledge.
 
 For example:
 
-- One asset may clearly define business rules.
-- Another may contain ambiguous terminology.
-- One workflow may collect every required input.
-- Another may omit a critical validation step.
+```text
+Knowledge Unit
+✓ Metadata included
+✓ Required fields completed
+✓ Schema validation passed
+```
 
-Both may look acceptable during manual review, yet lead to inconsistent agent behavior in production.
+While structural validation is important, it cannot determine whether:
 
-As AI systems become responsible for more operational tasks, organizations require a systematic way to assess whether knowledge assets are truly fit for purpose.
+* Business rules are complete
+* Decision logic is explicit
+* Contradictions exist
+* Important exceptions are missing
+* Assets are ready for production use
 
----
-
-## Why traditional documentation reviews are insufficient
-
-Traditional documentation reviews typically focus on questions such as:
-
-- Is the information accurate?
-- Is the writing clear?
-- Are there spelling or formatting issues?
-- Does the document follow style guidelines?
-
-While these remain important, AI-ready knowledge introduces additional quality requirements.
-
-For example:
-
-- Can an AI agent identify the correct action?
-- Are business constraints explicitly defined?
-- Are decision criteria unambiguous?
-- Is the workflow complete?
-- Can the asset be evaluated consistently over time?
-
-These questions require a different evaluation approach than conventional documentation reviews.
+Organizations therefore need a way to evaluate quality beyond schema validation.
 
 ---
 
-## The challenge
+## The Missing Layer
 
-Without a structured quality evaluation process:
+Between structured content and production deployment, organizations require an evaluation layer that measures:
 
-- Knowledge quality becomes inconsistent across teams.
-- Content reviews rely heavily on individual judgement.
-- Important gaps remain difficult to identify.
-- Improvements cannot be measured objectively.
-- Governance becomes difficult to scale.
+* Completeness
+* Clarity
+* Consistency
+* Explicitness
+* Governance readiness
+* Reusability
 
-Over time, these issues reduce trust in AI-generated outcomes and increase the effort required to maintain reliable knowledge assets.
+At a high level:
+
+```text
+Knowledge Assets
+        ↓
+Quality Evaluation
+        ↓
+Governed AI Knowledge
+```
+
+Knowledge answers:
+
+> What is true?
+
+Execution workflows answer:
+
+> What should happen next?
+
+Quality evaluation answers:
+
+> Can this knowledge be trusted?
+
+All three layers are necessary.
 
 ---
 
-## What this subproject explores
+## Problem Statement
 
-This subproject investigates how AI-ready knowledge and workflow assets can be evaluated using repeatable, objective criteria.
+AI-first organizations increasingly rely on structured knowledge and execution workflows to support autonomous agents.
 
-Rather than asking whether content is simply "good" or "bad," the goal is to assess measurable characteristics such as:
+However, creating these assets does not guarantee they are suitable for reliable production use.
 
-- Completeness
-- Clarity
-- Consistency
-- Explicitness
-- Governance readiness
-- Reusability
+Without a consistent evaluation framework:
 
-These evaluation dimensions provide a common framework that supports continuous improvement across AI-first knowledge systems.
+* Knowledge quality becomes subjective.
+* Governance becomes difficult to scale.
+* Quality improvements cannot be measured objectively.
+* AI behavior becomes increasingly difficult to predict.
+* Trust in operational knowledge gradually declines.
+
+The challenge addressed in this subproject is:
+
+**How can AI-ready knowledge and workflow assets be evaluated using consistent, measurable criteria that support governance, continuous improvement, and reliable agent behavior?**
 
 ---
 
-## Desired outcome
+## Objective of This Subproject
 
-The objective is to establish a reusable evaluation approach that enables organizations to:
+This subproject explores how to design a reusable evaluation framework that:
 
-- Assess AI-ready assets consistently.
-- Compare quality across multiple assets.
-- Identify improvement opportunities.
-- Support governance through measurable evidence.
-- Increase confidence in AI agent behavior.
+* Measures the quality of AI-ready knowledge assets
+* Assesses execution workflow quality
+* Produces consistent quality scores
+* Supports governance and review processes
+* Identifies opportunities for improvement
+* Enables continuous evaluation throughout the knowledge lifecycle
 
-Evaluation becomes an integral part of the knowledge lifecycle rather than a final review before publication.
+The resulting evaluation framework becomes the governance layer that helps organizations maintain trustworthy AI knowledge systems as they evolve.
 
-The following documents introduce the evaluation framework, scoring methodology, governance practices, and example assessments used throughout this subproject.
+---
+
+## Next step within this subproject
+
+The next step is to define what an evaluation framework is and identify the principles that make knowledge quality measurable and repeatable.
+
+That will live in:
+
+`design/evaluation_framework.md`
