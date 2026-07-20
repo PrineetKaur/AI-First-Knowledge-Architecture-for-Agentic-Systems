@@ -2,7 +2,7 @@
 
 ### Designing content that AI agents can Reason over, Act on, and be Evaluated against
 
-This repository will help you understand **how the knowledge designer role is changing to knowledge architect in AI-first companies**, *(as information is no longer written solely designed for humans but is actively consumed by autonomous AI systems).*
+This repository will help you understand **how the knowledge designer role is changing to knowledge architect in AI-first companies***(as information is no longer written solely designed for humans but is actively consumed by autonomous AI systems).*
 
 In traditional setups, content existed to *explain*.  
 In agentic systems, content exists to *drive behavior*.
@@ -83,8 +83,8 @@ AI-First-Knowledge-Architecture/
 ├── 01 Agent Ready Knowledge Base/         # Knowledge Architecture (knowledge is structured)
 ├── 02 Agent Execution Workflows/          # Behavior Architecture  (behavior is structured)
 ├── 03 Knowledge Quality Evaluator/        # Quality & Evaluation  (quality is measured)
-├── 04 AI Optimized FAQ Pipeline/          # Content Operations  (content production is scaled)
-├── 05 Tool Using Agent System/            # Tool-Using Agents  (agents to act on external systems)
+├── 04 AI Content Operations Pipeline/     # Content Operations  (content is scaled)
+├── 05 Tool Using Agent System/            # Tool-Using Agents  (introduce external systems)
 │
 ├── Shared/
 │   ├── schemas/
