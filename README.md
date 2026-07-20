@@ -104,27 +104,27 @@ Each subproject can be explored independently, but together they form a **cohesi
 ## Subprojects overview
 
 ### 1. Agent-Ready Knowledge Base
-Traditional documentation structured into metadata-rich knowledge units; optimized for retrieval and reasoning by the AI agents.
+Transforms traditional documentation into structured, metadata-rich knowledge assets that AI agents can reliably retrieve, interpret, and reason over.
 
 **Core Question Addressed:** *How do we transform human documentation into AI-ready knowledge?*
 
 ### 2. Agent Execution Workflows
-Designs structured execution workflows that help AI agents make consistent decisions, follow business processes, and take approved actions.
+Designs structured execution workflows that help AI agents make consistent decisions, follow business processes, and produce predictable outcomes.
 
 **Core Question Addressed:** *How do we guide AI agents to act consistently?*
 
-### 3. Knowledge Quality & Consistency Evaluator
-Introduces automated checks to identify contradictions, missing steps, ambiguity, and unsafe instructions in AI-consumed content.
+### 3. Knowledge Quality Evaluator
+Introduces a reusable evaluation framework for measuring the quality, consistency, and governance readiness of AI-ready knowledge and workflow assets.
 
 **Core Question Addressed:** *How do we measure and govern the quality of AI-ready assets?*
 
 ### 4. AI Content Operations Pipeline
-Builds a closed-loop system where FAQs are generated, tested through simulated queries, evaluated, and iteratively improved.
+Designs scalable content operations for planning, creating, reviewing, publishing, and maintaining AI-ready knowledge assets throughout their lifecycle.
 
 **Core Question Addressed:** *How do we produce and maintain AI-ready content at scale?*
 
 ### 5. Tool-Using Agent System
-Demonstrates how agents combine structured knowledge with tool usage to perform real actions, not just generate text.
+Demonstrates how governed knowledge and execution workflows enable AI agents to interact with external tools and business systems safely and consistently.
 
 **Core Question Addressed:** *How do governed knowledge assets connect with external tools and business systems?*
 
