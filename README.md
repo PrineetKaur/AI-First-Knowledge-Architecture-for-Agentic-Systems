@@ -61,7 +61,7 @@ This repository experiments with practical ways to:
 
 ---
 
-### Upcoming Implementation (Subprojects 04–05)
+### Current Implementation (Subprojects 04–05)
 
 The following technologies will be introduced in later stages of the project:
 
@@ -80,11 +80,11 @@ The repository is organized as a **progressive set of subprojects**, each buildi
 ```
 AI-First-Knowledge-Architecture/
 │
-├── 01 Agent Ready Knowledge Base/          # Knowledge Architecture (knowledge is structured)
-├── 02 Agent Execution Workflows/           # Behavior Architecture  (behavior is structured)
-├── 03 Knowledge Quality Evaluator/         # Quality & Evaluation  (quality is measured)
-├── 04 AI Optimized FAQ Pipeline/           # Content Operations  (content production is scaled)
-├── 05 Tool Using Agent System/             # Tool-Using Agents  (allows agents to act on external systems)
+├── 01 Agent Ready Knowledge Base/         # Knowledge Architecture (knowledge is structured)
+├── 02 Agent Execution Workflows/          # Behavior Architecture  (behavior is structured)
+├── 03 Knowledge Quality Evaluator/        # Quality & Evaluation  (quality is measured)
+├── 04 AI Optimized FAQ Pipeline/          # Content Operations  (content production is scaled)
+├── 05 Tool Using Agent System/            # Tool-Using Agents  (agents to act on external systems)
 │
 ├── Shared/
 │   ├── schemas/
@@ -104,19 +104,29 @@ Each subproject can be explored independently, but together they form a **cohesi
 ## Subprojects overview
 
 ### 1. Agent-Ready Knowledge Base
-Reworks traditional documentation into structured, metadata-rich knowledge units optimized for retrieval and reasoning by the AI agents.
+Traditional documentation structured into metadata-rich knowledge units; optimized for retrieval and reasoning by the AI agents.
+
+**Core Question Addressed:** *How do we transform human documentation into AI-ready knowledge?*
 
 ### 2. Agent Execution Workflows
 Designs structured execution workflows that help AI agents make consistent decisions, follow business processes, and take approved actions.
 
+**Core Question Addressed:** *How do we guide AI agents to act consistently?*
+
 ### 3. Knowledge Quality & Consistency Evaluator
 Introduces automated checks to identify contradictions, missing steps, ambiguity, and unsafe instructions in AI-consumed content.
+
+**Core Question Addressed:** *How do we measure and govern the quality of AI-ready assets?*
 
 ### 4. AI-Optimized FAQ Pipeline
 Builds a closed-loop system where FAQs are generated, tested through simulated queries, evaluated, and iteratively improved.
 
+**Core Question Addressed:** *How do we produce and maintain AI-ready content at scale?*
+
 ### 5. Tool-Using Agent System
 Demonstrates how agents combine structured knowledge with tool usage to perform real actions, not just generate text.
+
+**Core Question Addressed:** *How do governed knowledge assets connect with external tools and business systems?*
 
 ---
 
