@@ -27,18 +27,18 @@ At a high level, quality evaluation provides the governance layer that ensures k
 
 ## What this subproject is about
 
-The goal is to design a **quality evaluation layer** that helps organizations assess whether AI-ready assets are suitable for reliable agent use.
+The goal is to design a **quality architecture layer** that helps organizations evaluate whether AI-ready knowledge and workflow assets are suitable for reliable agent use.
 
 This includes defining:
 
-- *Evaluation dimensions*
-- *Quality criteria*
-- *Scoring methodology*
-- *Review workflows*
+- *Evaluation principles*
+- *Quality dimensions*
+- *Assessment patterns*
+- *Review processes*
 - *Governance practices*
-- *Continuous improvement processes*
+- *Continuous improvement mechanisms*
 
-The result is a reusable evaluation and governance framework that allows teams to assess, review, and continuously improve AI-ready knowledge assets using consistent criteria rather than subjective judgement.
+The result is a reusable **quality evaluation framework** that enables teams to assess, review, and continuously improve AI-ready assets using consistent criteria rather than subjective judgement.
 
 This mirrors the type of work Knowledge Operations and AI Governance teams perform when maintaining production AI knowledge systems.
 
@@ -86,8 +86,8 @@ This subproject addresses that gap by:
 This subproject includes:
 
 - *A real-world problem statement explaining why AI-ready assets require dedicated quality evaluation*
-- *A reusable evaluation framework and scoring methodology*
-- *Quality dimensions for assessing knowledge and workflow assets*
+- *A reusable quality evaluation framework*
+- *Evaluation principles and reusable assessment patterns*
 - *A machine-readable evaluation schema*
 - *Sample evaluation scorecards*
 - *Evaluation governance guidelines*
@@ -108,10 +108,10 @@ Each artifact is designed to reflect how AI-first organizations review, govern, 
 │   └── measuring_ai_knowledge_quality.md
 │
 ├── design/
-│   ├── evaluation_framework.md
-│   ├── evaluation_dimensions.md
-│   ├── scoring_methodology.md
-│   └── evaluation_workflow.md
+│   ├── what_is_an_evaluation_framework.md
+│   ├── evaluation_principles.md
+│   ├── evaluation_vs_validation.md
+│   └── evaluation_patterns.md
 │
 ├── schemas/
 │   └── quality_evaluation_schema.yaml
@@ -200,14 +200,14 @@ Together, they enable organizations to:
 - *Measure quality objectively*
 - *Continuously improve AI-ready content*
 
-The next subproject builds on this foundation by introducing scalable content operations for producing and maintaining AI-ready knowledge at scale.
+The next subproject builds on this foundation by introducing scalable content operations for creating, maintaining, and governing AI-ready knowledge assets throughout their lifecycle.
 
 ---
 
 ## Next step within this subproject
 
-The next step is to define why traditional documentation review is insufficient for AI-first knowledge systems.
+The next step is to define what an evaluation framework is and examine why structured evaluation is essential for AI-first knowledge systems.
 
 That will live in:
 
-`problem/measuring_ai_knowledge_quality.md`
+`design/what_is_an_evaluation_framework.md`
