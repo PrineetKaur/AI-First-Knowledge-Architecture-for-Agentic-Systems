@@ -152,15 +152,15 @@ Reliable AI-ready knowledge therefore requires both processes.
 At a high level:
 
 ```text
-Knowledge Asset
-        ↓
-Validation
+       Knowledge Asset
+             ↓
+         Validation
 (Meets Required Standards?)
-        ↓
-Evaluation
-(How Good Is It?)
-        ↓
-Governed Knowledge Asset
+             ↓
+         Evaluation
+     (How Good Is It?)
+             ↓
+ Governed Knowledge Asset
 ```
 
 Validation ensures compliance.
