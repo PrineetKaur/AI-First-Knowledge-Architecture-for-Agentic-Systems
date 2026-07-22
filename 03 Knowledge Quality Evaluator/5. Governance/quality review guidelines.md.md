@@ -1,4 +1,4 @@
-# Evaluator Guidelines
+# Quality Review Guidelines
 
 ## Background
 
