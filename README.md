@@ -108,20 +108,20 @@ Although each subproject can be explored independently, the repository is design
 Each subproject follows a common documentation structure:
 
 ```text
-Problem → Design → Schema → Main Artifact → Governance → Evaluation → Demo
+Problem → Design → Schema → MAIN ARTIFACT → Governance → Evaluation → Demo
 ```
 
 While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage and will include: *knowledge assets, execution workflows, evaluation scorecards, operational pipelines, or platform components.*
 
 | Subproject | Architectural Role | Primary Contribution |
 |------------|--------------------|----------------------|
-| ***01 Agent Ready Knowledge Base*** | Knowledge Layer | *Transforms human-oriented documentation into structured, AI-ready knowledge assets that agents can reliably retrieve and reason over.* |
-| ***02 Agent Execution Workflows*** | Behavior Layer | *Defines explicit execution workflows that guide AI agents through consistent decisions, actions, and business processes.* |
-| ***03 Knowledge Quality Evaluator*** | Quality Layer | *Introduces objective evaluation, governance, and continuous improvement for AI-ready knowledge and workflow assets.* |
-| ***04 AI Content Operations Pipeline*** | Operations Layer | *Designs scalable content operations for creating, reviewing, publishing, and maintaining AI-ready knowledge throughout its lifecycle.* |
-| ***05 Tool-Using Agent System*** | Integration Layer| *Demonstrates how governed knowledge and execution workflows enable AI agents to interact with external tools and business systems safely.* |
+| ***01 Agent Ready Knowledge Base*** | Knowledge | *Transforms human-oriented documentation into structured, AI-ready knowledge assets that agents can reliably retrieve and reason over.* |
+| ***02 Agent Execution Workflows*** | Behavior | *Defines explicit execution workflows that guide AI agents through consistent decisions, actions, and business processes.* |
+| ***03 Knowledge Quality Evaluator*** | Quality | *Introduces objective evaluation, governance, and continuous improvement for AI-ready knowledge and workflow assets.* |
+| ***04 AI Content Operations Pipeline*** | Operations | *Designs scalable content operations for creating, reviewing, publishing, and maintaining AI-ready knowledge throughout its lifecycle.* |
+| ***05 Tool-Using Agent System*** | Integration | *Demonstrates how governed knowledge and execution workflows enable AI agents to interact with external tools and business systems safely.* |
 
-This progression reflects how enterprise AI knowledge platforms mature in production—from designing high-quality knowledge assets to operating, governing, and integrating them into real-world AI systems.
+This progression reflects how enterprise AI knowledge platforms mature in production; *from designing high-quality knowledge assets to operating, governing, and integrating them into real-world AI systems.*
 
 ---
 
@@ -129,7 +129,7 @@ This progression reflects how enterprise AI knowledge platforms mature in produc
 
 ### 1. Agent-Ready Knowledge Base
 
-**Architectural Role:** Establishes the knowledge layer.
+**Architectural Role:** *Establishes the knowledge layer.*
 
 Transforms traditional documentation into structured, metadata-rich knowledge assets that AI agents can reliably retrieve, interpret, and reason over.
 
@@ -138,7 +138,7 @@ Transforms traditional documentation into structured, metadata-rich knowledge as
 
 ### 2. Agent Execution Workflows
 
-**Architectural Role:** Establishes the behavior layer.
+**Architectural Role:** *Establishes the behavior layer.*
 
 Designs structured execution workflows that help AI agents make consistent decisions, follow business processes, and produce predictable outcomes.
 
@@ -147,7 +147,7 @@ Designs structured execution workflows that help AI agents make consistent decis
 
 ### 3. Knowledge Quality Evaluator
 
-**Architectural Role:** Establishes the quality and governance layer.
+**Architectural Role:** *Establishes the quality and governance layer.*
 
 Introduces a reusable knowledge governance framework for evaluating the quality, consistency, and governance readiness of AI-ready knowledge and workflow assets.
 
@@ -156,7 +156,7 @@ Introduces a reusable knowledge governance framework for evaluating the quality,
 
 ### 4. AI Content Operations Pipeline
 
-**Architectural Role:** Establishes the operational layer.
+**Architectural Role:** *Establishes the operational layer.*
 
 Designs scalable content operations for planning, creating, reviewing, publishing, and maintaining AI-ready knowledge assets throughout their lifecycle.
 
@@ -165,28 +165,24 @@ Designs scalable content operations for planning, creating, reviewing, publishin
 
 ### 5. Tool-Using Agent System
 
-**Architectural Role:** Establishes the integration layer.
+**Architectural Role:** *Establishes the integration layer.*
 
 Demonstrates how governed knowledge and execution workflows enable AI agents to safely integrate with external tools and business systems.
 
 **Core Question Addressed:** *How do governed knowledge assets connect with external tools and business systems?*
 
 ---
+## High-level roadmap
 
-## How each project stage mirrors real production work
-
-Each subproject is designed to reflect how AI-ready knowledge systems are developed and governed within real organizations.
-
-Rather than focusing on model implementation, each stage addresses a distinct capability required to operate AI systems reliably:
-
-- Knowledge is structured into reusable, AI-ready assets
-- Agent behavior is guided through explicit workflows rather than implicit reasoning
-- Quality is measured using standardized evaluation frameworks
-- Content is governed through repeatable operational processes
-- Schemas, governance, and documentation evolve alongside the system
-- Trade-offs, assumptions, and limitations are documented as first-class design artifacts
-
-This repository is not about building increasingly capable AI models. It is about designing the knowledge, governance, and operational systems that enable AI agents to operate reliably at scale.
+|       | **Subproject 01**<br>**Agent Ready Knowledge Base** | **Subproject 02**<br>**Agent Execution Workflows** | **Subproject 03**<br>**Knowledge Quality Evaluator** | **Subproject 04** <br>**Knowledge Operations** | **Subproject 05** <br>**Knowledge Platform Architecture** |
+| ----- | --------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------- |
+| **1** | Problem                                             | Problem                                            | Problem                                              | Problem                                                   | Problem                                                              |
+| **2** | Content                                             | Design                                             | Design                                               | Design                                                    | Design                                                               |
+| **3** | Schema                                              | Schema                                             | Schema                                               | Schema                                                    | Schema                                                               |
+| **4** | Pipeline                                            | Workflows                                          | Evaluation                                  | Operations                                        | Platform Assets                                                      |
+| **5** | -                                        | Governance                                         | Governance                                           | Governance                                                | Governance                                                           |
+| **6** | Evaluation                                                 | Evaluation                                         | Evaluation                                           | Evaluation                                                | Evaluation                                                           |
+| **7** | Demo                                                  | Demo                                               | Demo                                                 | Demo                                                      | Demo                                                                 |
 
 ---
 
@@ -220,6 +216,23 @@ Each subproject can be used as:
 - A collection of reusable patterns for Knowledge Architecture, AI Content Operations, and Knowledge Governance
 
 The focus is not on model implementation, but on the systems and processes that enable AI agents to operate reliably.
+
+---
+
+## How each project stage mirrors real production work
+
+Each subproject is designed to reflect how AI-ready knowledge systems are developed and governed within real organizations.
+
+Rather than focusing on model implementation, each stage addresses a distinct capability required to operate AI systems reliably:
+
+- Knowledge is structured into reusable, AI-ready assets
+- Agent behavior is guided through explicit workflows rather than implicit reasoning
+- Quality is measured using standardized evaluation frameworks
+- Content is governed through repeatable operational processes
+- Schemas, governance, and documentation evolve alongside the system
+- Trade-offs, assumptions, and limitations are documented as first-class design artifacts
+
+This repository is not about building increasingly capable AI models. It is about designing the knowledge, governance, and operational systems that enable AI agents to operate reliably at scale.
 
 ---
 
