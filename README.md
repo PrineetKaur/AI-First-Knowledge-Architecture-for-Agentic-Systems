@@ -4,7 +4,7 @@
 
 As organizations adopt autonomous AI systems, knowledge is no longer created solely for human readers. It must also be structured so AI agents can retrieve it, reason over it, follow approved workflows, and operate consistently. 
 
-This repository demonstrates **how traditional documentation can be evolved into governed knowledge systems that support reliable AI behavior** and **reflect the types of challenges addressed by *knowledge architects*, *AI content designers*, and *knowledge operations teams* building AI-first products.**
+This repository demonstrates **how traditional documentation can be evolved into governed knowledge systems that support reliable AI behavior** and **reflect the types of challenges addressed by** *knowledge architects*, *AI content designers*, **and** *knowledge operations* **teams building AI-first products.**
 
 Rather than treating knowledge as static documentation, the project treats it as a **first-class system asset**:
 
