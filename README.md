@@ -111,7 +111,7 @@ Each subproject follows a common documentation structure:
 Problem → Design → Schema → MAIN ARTIFACT → Governance → Evaluation → Demo
 ```
 
-While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage and will include the phase-specific assets, i.e *knowledge pipeline, execution workflows, quality assessments, operational, and platform assets, respectively.*
+While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage and will include the phase-specific assets, i.e ***knowledge pipeline, execution workflows, quality assessments, operational, and platform assets.***
 
 | Subproject | Architectural Role | Primary Contribution |
 |------------|--------------------|----------------------|
