@@ -1,0 +1,78 @@
+{
+  "evaluation_id": "EVAL-WORKFLOW-001",
+  "asset_id": "WF-001",
+  "asset_name": "Customer Refund Request",
+  "asset_type": "execution_workflow",
+
+  "evaluation_metadata": {
+    "framework_version": "1.0.0",
+    "evaluation_date": "2026-06-17",
+    "evaluator": "Knowledge Operations Team",
+    "evaluation_status": "completed"
+  },
+
+  "scores": {
+    "goal_definition": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Workflow objective and success criteria are clearly defined."
+    },
+    "input_definition": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Required inputs are complete and well documented."
+    },
+    "workflow_structure": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Workflow states are explicit and logically organized."
+    },
+    "decision_logic": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Decision rules are deterministic and easy to evaluate."
+    },
+    "state_transitions": {
+      "score": 4,
+      "max_score": 5,
+      "comments": "Transitions are consistent with workflow intent."
+    },
+    "exception_handling": {
+      "score": 4,
+      "max_score": 5,
+      "comments": "Additional exception paths could be introduced for system failures."
+    },
+    "governance": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Ownership, metadata, and version information are complete."
+    },
+    "maintainability": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Workflow is modular and easy to extend."
+    }
+  },
+
+  "overall_score": {
+    "score": 38,
+    "max_score": 40,
+    "percentage": 95
+  },
+
+  "strengths": [
+    "Explicit workflow states.",
+    "Deterministic decision rules.",
+    "Clear workflow objective.",
+    "Reusable across multiple AI agents."
+  ],
+
+  "improvement_opportunities": [
+    "Add explicit exception paths for external system failures.",
+    "Include additional terminal outcomes for partial completion scenarios."
+  ],
+
+  "recommendation": "Approved for production use.",
+
+  "next_review": "2026-12-17"
+}
