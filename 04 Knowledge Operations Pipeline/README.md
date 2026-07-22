@@ -1,6 +1,6 @@
-# Subproject 04: AI Content Operations Pipeline
+# Subproject 04: Knowledge Operations Pipeline
 
-### Turning AI-ready knowledge into scalable content operations
+### Turning AI-ready knowledge into scalable knowledge operations
 
 Subproject 01 focused on structuring knowledge for AI agents.
 
@@ -13,7 +13,7 @@ But creating high-quality knowledge is only part of operating an AI-first knowle
 Organizations also need to answer questions such as:
 
 - *How is new knowledge requested and prioritized?*
-- *Who reviews and approves AI-ready content?*
+- *Who reviews and approves AI-ready knowledge?*
 - *How are knowledge assets maintained as products evolve?*
 - *How do teams ensure published knowledge remains accurate over time?*
 
@@ -21,19 +21,19 @@ This subproject focuses on another critical challenge in AI-first systems:
 
 **How do we create, maintain, and improve AI-ready knowledge assets at scale?**
 
-At a high level, content operations provide the processes that ensure AI-ready knowledge remains accurate, governed, and continuously maintained throughout its lifecycle.
+At a high level, knowledge operations provide the processes that ensure AI-ready knowledge remains accurate, governed, and continuously maintained throughout its lifecycle.
 
-![AI Content Operations Architecture](architecture_diagram.png)
+![AI knowledge Operations Architecture](architecture_diagram.png)
 
 ---
 
 ## What this subproject is about
 
-The goal is to design a **content operations layer** that manages the lifecycle of AI-ready knowledge assets from creation to ongoing maintenance.
+The goal is to design a **knowledge operations layer** that manages the lifecycle of AI-ready knowledge assets from creation to ongoing maintenance.
 
 This includes defining:
 
-- *Content intake and planning*
+- *knowledge intake and planning*
 - *Authoring standards*
 - *Review and approval workflows*
 - *Publishing processes*
@@ -42,7 +42,7 @@ This includes defining:
 
 The result is a repeatable operational framework that enables organizations to scale AI-ready knowledge without sacrificing quality, consistency, or governance.
 
-This mirrors the type of work Knowledge Operations and AI Content teams perform when managing production knowledge systems.
+This mirrors the type of work Knowledge Operations and AI knowledge teams perform when managing production knowledge systems.
 
 ---
 
@@ -66,10 +66,10 @@ Human teams may eventually identify these inconsistencies.
 
 AI agents cannot.
 
-Without structured content operations:
+Without structured knowledge operations:
 
 - *Knowledge becomes outdated over time*
-- *Content quality varies between authors*
+- *Knowledge quality varies between authors*
 - *Review processes become inconsistent*
 - *Publishing lacks governance*
 - *Changes are difficult to trace and maintain*
@@ -78,7 +78,7 @@ As AI knowledge ecosystems continue to grow, operational processes become just a
 
 This subproject addresses that gap by:
 
-- *Defining repeatable content operations*
+- *Defining repeatable knowledge operations*
 - *Standardizing authoring and review*
 - *Supporting governed publishing workflows*
 - *Managing knowledge throughout its lifecycle*
@@ -89,12 +89,12 @@ This subproject addresses that gap by:
 
 This subproject includes:
 
-- *A real-world problem statement explaining why AI-ready knowledge requires structured content operations*
-- *Content lifecycle and operational design documentation*
-- *Reusable content workflow definitions*
-- *A machine-readable content asset schema*
+- *A real-world problem statement explaining why AI-ready knowledge requires structured knowledge operations*
+- *knowledge lifecycle and operational design documentation*
+- *Reusable knowledge workflow definitions*
+- *A machine-readable knowledge asset schema*
 - *Governance guidelines for authoring and publishing*
-- *Content quality evaluation metrics*
+- *knowledge quality evaluation metrics*
 - *A short demo walkthrough*
 
 Each artifact is designed to reflect how AI-first organizations operationalize knowledge creation and maintenance at scale.
@@ -104,34 +104,34 @@ Each artifact is designed to reflect how AI-first organizations operationalize k
 ## Folder overview
 
 ```text
-04 AI Content Operations Pipeline/
+04 AI knowledge Operations Pipeline/
 │
 ├── README.md
 │
 ├── problem/
-│   └── scaling_ai_ready_content.md
+│   └── scaling_ai_ready_knowledge.md
 │
 ├── design/
-│   ├── content_operations_overview.md
-│   ├── content_lifecycle.md
+│   ├── knowledge_operations_overview.md
+│   ├── knowledge_lifecycle.md
 │   ├── authoring_principles.md
-│   └── content_workflow_patterns.md
+│   └── knowledge_workflow_patterns.md
 │
 ├── schemas/
-│   └── content_asset_schema.yaml
+│   └── knowledge_asset_schema.yaml
 │
 ├── pipeline/
-│   ├── content_intake_workflow.yaml
-│   ├── content_review_workflow.yaml
+│   ├── knowledge_intake_workflow.yaml
+│   ├── knowledge_review_workflow.yaml
 │   └── publishing_workflow.yaml
 │
 ├── governance/
-│   ├── content_governance.md
-│   └── content_versioning.md
+│   ├── knowledge_governance.md
+│   └── knowledge_versioning.md
 │
 ├── evaluation/
-│   ├── content_quality_metrics.md
-│   └── sample_content_evaluation.json
+│   ├── knowledge_quality_metrics.md
+│   └── sample_knowledge_evaluation.json
 │
 └── demo/
     └── demo_notes.md
@@ -139,9 +139,9 @@ Each artifact is designed to reflect how AI-first organizations operationalize k
 
 ---
 
-## What "AI Content Operations" means here
+## What "AI knowledge Operations" means here
 
-In this context, AI Content Operations:
+In this context, AI knowledge Operations:
 
 - *Defines how AI-ready knowledge assets are created, reviewed, and maintained*
 - *Standardizes authoring and publishing processes*
@@ -150,10 +150,10 @@ In this context, AI Content Operations:
 - *Ensures knowledge remains accurate as products and policies evolve*
 - *Can be implemented independently of AI models and user interfaces*
 
-This makes content operations suitable for:
+This makes knowledge operations suitable for:
 
 - *Knowledge Operations teams*
-- *AI Content Design*
+- *AI knowledge Design*
 - *Enterprise documentation programs*
 - *AI-first product organizations*
 
@@ -179,7 +179,7 @@ Once knowledge is:
 It becomes possible to:
 
 - ***Scale AI-ready knowledge across teams***
-- ***Maintain content quality over time***
+- ***Maintain knowledge quality over time***
 - ***Standardize authoring and publishing***
 - ***Support continuous knowledge improvement***
 
@@ -205,7 +205,7 @@ Evaluation frameworks that measure and govern AI-ready knowledge assets.
 
 ### Subproject 04
 
-**Content Operations**
+**Knowledge Operations**
 
 Operational processes that create, maintain, publish, and continuously improve AI-ready knowledge.
 
@@ -222,8 +222,8 @@ The next subproject builds on this foundation by connecting governed knowledge a
 
 ## Next step within this subproject
 
-The next step is to define why scaling AI-ready knowledge requires dedicated content operations rather than traditional documentation processes.
+The next step is to define why scaling AI-ready knowledge requires dedicated knowledge operations rather than traditional documentation processes.
 
 That will live in:
 
-`problem/scaling_ai_ready_content.md`
+`problem/scaling_ai_ready_knowledge.md`
