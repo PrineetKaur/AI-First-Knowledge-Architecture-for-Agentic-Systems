@@ -105,6 +105,14 @@ Each subproject builds on the previous one, demonstrating **how documentation ev
 
 Although each subproject can be explored independently, the repository is designed to be read as a progressive architecture for AI-first knowledge systems. It demonstrates how organizations can progressively design, govern, operate, and scale AI-ready knowledge systems from foundational content architecture through production-ready agent integration.
 
+Each subproject follows a common documentation structure:
+
+```text
+Problem → Design → Schema → **Main Artifact** → Governance → Evaluation → Demo
+```
+
+While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage. And may include: *knowledge assets, execution workflows, evaluation scorecards, operational pipelines, or platform components.*
+
 | Subproject | Architectural Role | Primary Contribution |
 |------------|--------------------|----------------------|
 | ***01 Agent Ready Knowledge Base*** | Knowledge Layer | *Transforms human-oriented documentation into structured, AI-ready knowledge assets that agents can reliably retrieve and reason over.* |
