@@ -108,10 +108,10 @@ Although each subproject can be explored independently, the repository is design
 Each subproject follows a common documentation structure:
 
 ```text
-Problem → Design → Schema → **Main Artifact** → Governance → Evaluation → Demo
+Problem → Design → Schema → Main Artifact → Governance → Evaluation → Demo
 ```
 
-While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage. And may include: *knowledge assets, execution workflows, evaluation scorecards, operational pipelines, or platform components.*
+While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage and will include: *knowledge assets, execution workflows, evaluation scorecards, operational pipelines, or platform components.*
 
 | Subproject | Architectural Role | Primary Contribution |
 |------------|--------------------|----------------------|
