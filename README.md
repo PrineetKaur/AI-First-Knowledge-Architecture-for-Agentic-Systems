@@ -75,9 +75,7 @@ This repository focuses on **the systems that enable AI agents to operate reliab
 
 ## How the project is structured
 
-The repository is intentionally organized to mirror how AI-first knowledge systems evolve in production:
-
-**Knowledge Architecture → Behavior Architecture → Quality Architecture → Content Operations → System Integration**
+The repository is intentionally organized to mirror how AI-first knowledge systems evolve in production and follows the following structure:
 
 ```
 AI-First-Knowledge-Architecture/
@@ -86,7 +84,7 @@ AI-First-Knowledge-Architecture/
 ├── 02 Agent Execution Workflows/                  # Behavior Architecture
 ├── 03 Knowledge Quality Evaluator/                # Quality Architecture 
 ├── 04 AI Content Operations Pipeline/             # Content Operations 
-├── 05 Tool Using Agent System/                    # Tool-Using Agents  
+├── 05 Tool Using Agent System/                    # System Integration  
 │
 ├── Shared/
 │   ├── schemas/
@@ -109,11 +107,11 @@ Although each subproject can be explored independently, the repository is design
 
 | Subproject | Architectural Role | Primary Contribution |
 |------------|--------------------|----------------------|
-| **01 Agent Ready Knowledge Base** | **Knowledge Layer** | Transforms human-oriented documentation into structured, AI-ready knowledge assets that agents can reliably retrieve and reason over. |
-| **02 Agent Execution Workflows** | **Behavior Layer** | Defines explicit execution workflows that guide AI agents through consistent decisions, actions, and business processes. |
-| **03 Knowledge Quality Evaluator** | **Quality Layer** | Introduces objective evaluation, governance, and continuous improvement for AI-ready knowledge and workflow assets. |
-| **04 AI Content Operations Pipeline** *(planned)* | **Operations Layer** | Designs scalable content operations for creating, reviewing, publishing, and maintaining AI-ready knowledge throughout its lifecycle. |
-| **05 Tool-Using Agent System** *(planned)* | **Integration Layer** | Demonstrates how governed knowledge and execution workflows enable AI agents to interact with external tools and business systems safely. |
+| ***01 Agent Ready Knowledge Base*** | Knowledge Layer | *Transforms human-oriented documentation into structured, AI-ready knowledge assets that agents can reliably retrieve and reason over.* |
+| ***02 Agent Execution Workflows*** | Behavior Layer | *Defines explicit execution workflows that guide AI agents through consistent decisions, actions, and business processes.* |
+| ***03 Knowledge Quality Evaluator*** | Quality Layer | *Introduces objective evaluation, governance, and continuous improvement for AI-ready knowledge and workflow assets.* |
+| ***04 AI Content Operations Pipeline*** | Operations Layer | *Designs scalable content operations for creating, reviewing, publishing, and maintaining AI-ready knowledge throughout its lifecycle.* |
+| ***05 Tool-Using Agent System*** | Integration Layer| *Demonstrates how governed knowledge and execution workflows enable AI agents to interact with external tools and business systems safely.* |
 
 This progression reflects how enterprise AI knowledge platforms mature in production—from designing high-quality knowledge assets to operating, governing, and integrating them into real-world AI systems.
 
