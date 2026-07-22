@@ -1,0 +1,78 @@
+{
+  "evaluation_id": "EVAL-KNOWLEDGE-001",
+  "asset_id": "KU-CANCEL-SUB-001",
+  "asset_name": "Cancel Subscription Knowledge Unit",
+  "asset_type": "knowledge_unit",
+
+  "evaluation_metadata": {
+    "framework_version": "1.0.0",
+    "evaluation_date": "2026-06-17",
+    "evaluator": "Knowledge Operations Team",
+    "evaluation_status": "completed"
+  },
+
+  "scores": {
+    "completeness": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "All required business information is represented."
+    },
+    "clarity": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Instructions are explicit and unambiguous."
+    },
+    "explicitness": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Decision logic and constraints are clearly defined."
+    },
+    "consistency": {
+      "score": 4,
+      "max_score": 5,
+      "comments": "Structure is consistent with repository standards."
+    },
+    "governance": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Ownership, versioning, and review metadata are complete."
+    },
+    "retrievability": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Metadata supports reliable retrieval and routing."
+    },
+    "reusability": {
+      "score": 5,
+      "max_score": 5,
+      "comments": "Knowledge unit can be reused across multiple workflows."
+    },
+    "maintainability": {
+      "score": 4,
+      "max_score": 5,
+      "comments": "Minor improvements could simplify future updates."
+    }
+  },
+
+  "overall_score": {
+    "score": 38,
+    "max_score": 40,
+    "percentage": 95
+  },
+
+  "strengths": [
+    "Clear separation between steps, constraints, and decision rules.",
+    "Well-defined governance metadata.",
+    "Suitable for AI retrieval and reasoning.",
+    "Low ambiguity across execution steps."
+  ],
+
+  "improvement_opportunities": [
+    "Expand examples to cover additional edge cases.",
+    "Include more retrieval synonyms for broader query matching."
+  ],
+
+  "recommendation": "Approved for production use.",
+
+  "next_review": "2026-12-17"
+}
