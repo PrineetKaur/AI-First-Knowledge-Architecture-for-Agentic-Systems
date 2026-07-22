@@ -111,7 +111,7 @@ Each subproject follows a common documentation structure:
 Problem → Design → Schema → MAIN ARTIFACT → Governance → Evaluation → Demo
 ```
 
-While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage and will include: *knowledge assets, execution workflows, evaluation scorecards, operational pipelines, or platform components.*
+While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage and will include the phase-specific pipeline assets, i.e *knowledge, execution, quality, operations, and platform, respectively.*
 
 | Subproject | Architectural Role | Primary Contribution |
 |------------|--------------------|----------------------|
@@ -119,7 +119,7 @@ While every subproject follows this overall structure, the **Main Artifact** evo
 | ***02 Agent Execution Workflows*** | Behavior | *Defines explicit execution workflows that guide AI agents through consistent decisions, actions, and business processes.* |
 | ***03 Knowledge Quality Evaluator*** | Quality | *Introduces objective evaluation, governance, and continuous improvement for AI-ready knowledge and workflow assets.* |
 | ***04 Knowledge Operations Pipeline*** | Operations | *Designs scalable knowledge operations for creating, reviewing, publishing, and maintaining AI-ready knowledge throughout its lifecycle.* |
-| ***05 Tool-Using Agent System*** | Integration | *Demonstrates how governed knowledge and execution workflows enable AI agents to interact with external tools and business systems safely.* |
+| ***05 Knowledge Platform Architecture*** | Integration | *Demonstrates how governed knowledge and execution workflows enable AI agents to interact with external tools and business systems safely.* |
 
 This progression reflects how enterprise AI knowledge platforms mature in production; *from designing high-quality knowledge assets to operating, governing, and integrating them into real-world AI systems.*
 
