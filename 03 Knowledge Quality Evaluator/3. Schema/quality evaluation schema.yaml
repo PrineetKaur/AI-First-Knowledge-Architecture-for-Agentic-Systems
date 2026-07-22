@@ -1,0 +1,211 @@
+$schema: "https://json-schema.org/draft/2020-12/schema"
+
+$id: "https://example.com/schemas/quality_evaluation_schema.json"
+
+title: "AI Knowledge Quality Evaluation Schema"
+
+description: >
+  Schema for representing structured quality evaluations of AI-ready
+  knowledge assets and execution workflows. Designed to support
+  repeatable assessment, governance, quality scoring, and continuous
+  improvement.
+
+type: object
+
+additionalProperties: false
+
+required:
+  - evaluation_id
+  - asset
+  - evaluation
+  - quality_scores
+  - overall_score
+  - governance
+  - versioning
+
+properties:
+
+  evaluation_id:
+    type: string
+    description: Stable identifier for the evaluation.
+    examples:
+      - "QE-001"
+
+  asset:
+
+    type: object
+
+    required:
+      - asset_id
+      - asset_type
+      - title
+
+    properties:
+
+      asset_id:
+        type: string
+
+      asset_type:
+        type: string
+
+        enum:
+          - knowledge_unit
+          - execution_workflow
+
+      title:
+        type: string
+
+      version:
+        type: string
+
+      owner:
+        type: string
+
+  evaluation:
+
+    type: object
+
+    required:
+      - evaluator
+      - evaluation_date
+      - evaluation_type
+
+    properties:
+
+      evaluator:
+        type: string
+        description: Person, team, or automated system performing the evaluation.
+
+      evaluation_date:
+        type: string
+        pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+
+      evaluation_type:
+
+        type: string
+
+        enum:
+          - manual
+          - automated
+          - hybrid
+
+      purpose:
+        type: string
+
+  quality_scores:
+
+    type: object
+
+    required:
+      - completeness
+      - consistency
+      - clarity
+      - accuracy
+      - governance_readiness
+
+    properties:
+
+      completeness:
+        type: number
+        minimum: 1
+        maximum: 5
+
+      consistency:
+        type: number
+        minimum: 1
+        maximum: 5
+
+      clarity:
+        type: number
+        minimum: 1
+        maximum: 5
+
+      accuracy:
+        type: number
+        minimum: 1
+        maximum: 5
+
+      governance_readiness:
+        type: number
+        minimum: 1
+        maximum: 5
+
+  overall_score:
+
+    type: number
+
+    minimum: 1
+
+    maximum: 5
+
+  findings:
+
+    type: object
+
+    properties:
+
+      strengths:
+
+        type: array
+
+        items:
+          type: string
+
+      issues:
+
+        type: array
+
+        items:
+          type: string
+
+      recommendations:
+
+        type: array
+
+        items:
+          type: string
+
+  governance:
+
+    type: object
+
+    required:
+      - status
+      - next_review
+
+    properties:
+
+      status:
+
+        type: string
+
+        enum:
+          - approved
+          - approved_with_changes
+          - requires_revision
+          - rejected
+
+      next_review:
+        type: string
+        pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+
+      reviewed_by:
+        type: string
+
+  versioning:
+
+    type: object
+
+    required:
+      - schema_version
+
+    properties:
+
+      schema_version:
+        type: string
+
+      evaluation_version:
+        type: string
+
+      previous_evaluation:
+        type: string
