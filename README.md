@@ -1,6 +1,6 @@
-# AI-First Knowledge Architecture for Agentic Systems
+# Modern Knowledge Systems Architecture
 
-### Designing knowledge systems for reliable AI agents.
+### Designing structured, governed knowledge systems for humans and AI.
 
 As organizations adopt autonomous AI systems, knowledge is no longer created solely for human readers. It must also be structured so AI agents can retrieve it, reason over it, follow approved workflows, and operate consistently. 
 
@@ -9,6 +9,8 @@ This repository demonstrates **how traditional documentation can be evolved into
 Rather than treating knowledge as static documentation, the project treats it as a **first-class system asset**:
 
 ***Structured, versioned, evaluated, and continuously improved throughout its lifecycle***. 
+
+**Note:** _Although the examples in this repository focus on AI agents, the architectural principles followed to build it step by step apply broadly to modern knowledge systems, enterprise documentation, and operational knowledge management. AI agents are used as the motivating use case because they place the highest demands on knowledge quality, structure, and governance._
 
 ![Project Preview Image](preview.png)
 
@@ -80,11 +82,11 @@ The repository is intentionally organized to mirror how AI-first knowledge syste
 ```
 AI-First-Knowledge-Architecture/
 │
-├── 01 Agent Ready Knowledge Base/                 # Knowledge Architecture
-├── 02 Agent Execution Workflows/                  # Behavior Architecture
-├── 03 Knowledge Quality Evaluator/                # Quality Architecture 
+├── 01 Agent Ready Knowledge Base/                 # Knowledge Modeling
+├── 02 Agent Execution Workflows/                  # Behavior Modeling
+├── 03 Knowledge Quality Evaluator/                # Quality Governance 
 ├── 04 Knowledge Operations Pipeline/              # Knowledge Operations 
-├── 05 Knowledge Platform Architecture/            # System Integration  
+├── 05 Knowledge Platform Architecture/            # System Architecture  
 │
 ├── Shared/
 │   ├── schemas/
