@@ -191,19 +191,3 @@ Rather than focusing on model implementation, each stage addresses a distinct ca
 - Trade-offs, assumptions, and limitations are documented as first-class design artifacts
 
 This repository is not about building increasingly capable AI models. It is about designing the knowledge, governance, and operational systems that enable AI agents to operate reliably at scale.
-
----
-
-## How this work progresses
-
-The repository follows the lifecycle of an AI-first knowledge system.
-
-Each subproject builds on the capabilities introduced by the previous one:
-
-- **Knowledge Architecture** — Transform human documentation into AI-ready knowledge assets.
-- **Behavior Architecture** — Define structured workflows that guide consistent agent behavior.
-- **Quality Architecture** — Evaluate and govern AI-ready knowledge and workflow assets.
-- **Knowledge Operations** — Scale the creation, maintenance, and governance of AI-ready knowledge assets.
-- **System Integration** — Connect governed knowledge assets with external tools and business systems.
-
-This progression mirrors how AI-first organizations evolve from creating structured knowledge to operating complete knowledge systems that support reliable agent behavior.
