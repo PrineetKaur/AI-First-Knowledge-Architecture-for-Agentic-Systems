@@ -1,4 +1,4 @@
-# Modern Knowledge Systems Architecture
+# Knowledge Architecture for Modern Systems
 
 ### Designing structured, governed knowledge systems for humans and AI.
 
@@ -99,31 +99,7 @@ AI-First-Knowledge-Architecture/
     └── case-notes/
 ```
 
-Each subproject builds on the previous one, demonstrating **how documentation evolves into a governed knowledge system capable of supporting reliable AI agents at scale**.
-
----
-
-## How the subprojects build on one another
-
-Although each subproject can be explored independently, the repository is designed to be read as a progressive architecture for AI-first knowledge systems. It demonstrates how organizations can progressively design, govern, operate, and scale AI-ready knowledge systems from foundational knowledge architecture through production-ready agent integration.
-
-Each subproject follows a common documentation structure:
-
-```text
-Problem → Design → Schema → MAIN ARTIFACT → Governance → Evaluation → Demo
-```
-
-While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage and will include the phase-specific assets, i.e ***knowledge pipeline, execution workflows, quality assessments, operational, and platform assets.***
-
-| Subproject | Architectural Role | Primary Contribution |
-|------------|--------------------|----------------------|
-| ***01 Agent Ready Knowledge Base*** | Knowledge | *Transforms human-oriented documentation into structured, AI-ready knowledge assets that agents can reliably retrieve and reason over.* |
-| ***02 Agent Execution Workflows*** | Behavior | *Defines explicit execution workflows that guide AI agents through consistent decisions, actions, and business processes.* |
-| ***03 Knowledge Quality Evaluator*** | Quality | *Introduces objective evaluation, governance, and continuous improvement for AI-ready knowledge and workflow assets.* |
-| ***04 Knowledge Operations Pipeline*** | Operations | *Designs scalable knowledge operations for creating, reviewing, publishing, and maintaining AI-ready knowledge throughout its lifecycle.* |
-| ***05 Knowledge Platform Architecture*** | Integration | *Demonstrates how governed knowledge and execution workflows enable AI agents to interact with external tools and business systems safely.* |
-
-This progression reflects how enterprise AI knowledge platforms mature in production; *from designing high-quality knowledge assets to operating, governing, and integrating them into real-world AI systems.*
+Each subproject builds on the previous one, and while each subproject can be explored independently, the repository is designed to be read as a progressive architecture for AI-first knowledge systems. Demonstrating **how documentation should evolve into a governed knowledge system capable of supporting reliable AI agents at scale**.
 
 ---
 
@@ -131,7 +107,7 @@ This progression reflects how enterprise AI knowledge platforms mature in produc
 
 ### 1. Agent-Ready Knowledge Base
 
-**Architectural Role:** *Establishes the knowledge layer.*
+**Architectural Role:** *Establishes the Knowledge layer.*
 
 Transforms traditional documentation into structured, metadata-rich knowledge assets that AI agents can reliably retrieve, interpret, and reason over.
 
@@ -140,7 +116,7 @@ Transforms traditional documentation into structured, metadata-rich knowledge as
 
 ### 2. Agent Execution Workflows
 
-**Architectural Role:** *Establishes the behavior layer.*
+**Architectural Role:** *Establishes the Behavior layer.*
 
 Designs structured execution workflows that help AI agents make consistent decisions, follow business processes, and produce predictable outcomes.
 
@@ -149,7 +125,7 @@ Designs structured execution workflows that help AI agents make consistent decis
 
 ### 3. Knowledge Quality Evaluator
 
-**Architectural Role:** *Establishes the quality and governance layer.*
+**Architectural Role:** *Establishes the Quality and Governance layer.*
 
 Introduces a reusable knowledge governance framework for evaluating the quality, consistency, and governance readiness of AI-ready knowledge and workflow assets.
 
@@ -158,7 +134,7 @@ Introduces a reusable knowledge governance framework for evaluating the quality,
 
 ### 4. Knowledge Operations Pipeline
 
-**Architectural Role:** *Establishes the operational layer.*
+**Architectural Role:** *Establishes the Operational layer.*
 
 Designs scalable knowledge operations for planning, creating, reviewing, publishing, and maintaining AI-ready knowledge assets throughout their lifecycle.
 
@@ -167,41 +143,21 @@ Designs scalable knowledge operations for planning, creating, reviewing, publish
 
 ### 5. Tool-Using Agent System
 
-**Architectural Role:** *Establishes the integration layer.*
+**Architectural Role:** *Establishes the Integration layer.*
 
 Demonstrates how governed knowledge and execution workflows enable AI agents to safely integrate with external tools and business systems.
 
 **Core Question Addressed:** *How do governed knowledge assets connect with external tools and business systems?*
 
 ---
-## High-level roadmap
+## What you will find inside each subproject
 
-|       | **Subproject 01**<br>**Agent Ready Knowledge Base** | **Subproject 02**<br>**Agent Execution Workflows** | **Subproject 03**<br>**Knowledge Quality Evaluator** | **Subproject 04** <br>**Knowledge Operations** | **Subproject 05** <br>**Knowledge Platform Architecture** |
-| ----- | --------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------------- |
-| **1** | Problem                                             | Problem                                            | Problem                                              | Problem                                                   | Problem                                                              |
-| **2** | Content                                             | Design                                             | Design                                               | Design                                                    | Design                                                               |
-| **3** | Schema                                              | Schema                                             | Schema                                               | Schema                                                    | Schema                                                               |
-| **4** | Pipeline                                            | Workflows                                          | Evaluation                                  | Operations                                        | Platform Assets                                                      |
-| **5** | -                                        | Governance                                         | Governance                                           | Governance                                                | Governance                                                           |
-| **6** | Evaluation                                                 | Evaluation                                         | Evaluation                                           | Evaluation                                                | Evaluation                                                           |
-| **7** | Demo                                                  | Demo                                               | Demo                                                 | Demo                                                      | Demo                                                                 |
+Each subproject follows a common documentation structure:
 
----
-
-## What you'll find inside each subproject
-
-Every subproject follows a consistent structure and includes:
-
-- A real-world problem statement
-- An architecture diagram illustrating the system design
-- Design principles and supporting documentation
-- Schemas defining reusable knowledge structures
-- Representative implementation assets
-- Governance guidelines for maintaining consistency
-- Evaluation criteria and sample assessments
-- Demo notes suitable for interview walkthroughs
-
-The structure reflects how AI-ready knowledge systems are designed, documented, and governed within production environments.
+```text
+Problem Statement → Design Principles → Schema Definition → MAIN ARTIFACT → Governance Guidelines → Evaluation Criteria → Demo Notes
+```
+*While every subproject follows this overall structure, the **Main Artifact** evolves to reflect the architectural focus of that stage and will include the phase-specific assets (knowledge pipeline, execution workflows, quality assessments, operational assets, or platform assets).*
 
 ---
 
