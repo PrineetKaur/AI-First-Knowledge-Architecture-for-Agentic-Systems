@@ -68,10 +68,11 @@ This repository focuses on **the systems that enable AI agents to operate reliab
 - Standardizing authoring, review, and publishing processes
 - Managing knowledge throughout its lifecycle
 
-### System Integration
+### Knowledge Platform
 
-- Connecting governed knowledge with external tools and business systems
-- Demonstrating how structured knowledge supports reliable AI operations
+- Integrating structured, governed knowledge into an enterprise knowledge platform
+- Connecting knowledge, behavior, quality, and operations into a unified system
+- Supporting knowledge consumption across humans, automation, AI agents, and intelligent systems
 
 ---
 
@@ -143,11 +144,11 @@ Designs scalable knowledge operations for planning, creating, reviewing, publish
 
 ### 5. Knowledge Platform Architecture
 
-**Architectural Role:** *Establishes the Integration layer.*
+**Architectural Role:** *Establishes the Platform layer.*
 
-Demonstrates how governed knowledge and execution workflows enable AI agents to safely integrate with external tools and business systems.
+Demonstrates how structured, governed knowledge and operational processes become part of an enterprise knowledge platform that can support humans, automation, AI agents, and intelligent systems.
 
-**Core Question Addressed:** *How do governed knowledge assets connect with external tools and business systems?*
+**Core Question Addressed:** *How do we integrate governed knowledge into an enterprise knowledge platform?*
 
 ---
 ## What you will find inside each subproject
