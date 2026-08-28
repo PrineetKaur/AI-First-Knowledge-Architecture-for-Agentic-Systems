@@ -4,7 +4,7 @@
 
 As organizations adopt autonomous AI systems, knowledge is no longer created solely for human readers. It must also be structured so AI agents can retrieve it, reason over it, follow approved workflows, and operate consistently. 
 
-This repository demonstrates **how traditional documentation can evolve into governed knowledge systems that support reliable AI behavior** and **reflect the types of challenges addressed by** *knowledge architects*, *AI content designers*, **and** *knowledge operations* **teams building AI-first products.**
+This repository demonstrates **how traditional documentation can evolve into governed knowledge systems that support reliable AI behavior** and **reflect the types of challenges addressed by** *knowledge architects*, *AI content designers*, **and** *knowledge operations* **teams.**
 
 Rather than treating knowledge as static documentation, the project treats it as a **first-class system asset**:
 
@@ -36,7 +36,7 @@ This repository explores practical approaches to:
 
 Together, these subprojects demonstrate how AI-first organizations can build knowledge systems that are reliable, reusable, measurable, and designed for continuous improvement.
 
-**The result is a production-inspired blueprint for designing AI-first knowledge systems.**
+**The result is a production-inspired blueprint for designing knowledge systems.**
 
 ---
 
@@ -87,7 +87,7 @@ AI-First-Knowledge-Architecture/
 ├── 02 Agent Execution Workflows/                  # Behavior Modeling
 ├── 03 Knowledge Quality Evaluator/                # Quality Governance 
 ├── 04 Knowledge Operations Pipeline/              # Knowledge Operations 
-├── 05 Knowledge Platform Architecture/            # System Architecture  
+├── 05 Knowledge Platform Architecture/            # Knowledge Platform  
 │
 ├── Shared/
 │   ├── schemas/
@@ -148,7 +148,7 @@ Designs scalable knowledge operations for planning, creating, reviewing, publish
 
 Demonstrates how structured, governed knowledge and operational processes become part of an enterprise knowledge platform that can support humans, automation, AI agents, and intelligent systems.
 
-**Core Question Addressed:** *How do we integrate governed knowledge into an enterprise knowledge platform?*
+**Core Question Addressed:** *How do we make governed knowledge a platform capability?*
 
 ---
 ## What you will find inside each subproject
