@@ -1,4 +1,4 @@
-# Knowledge Architecture for AI Systems
+# Knowledge Architecture for AI Agents
 
 ### Designing structured and governed knowledge systems for machine consumption.
 
