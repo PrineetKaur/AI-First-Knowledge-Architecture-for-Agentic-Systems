@@ -36,13 +36,11 @@ This repository explores practical approaches to:
 
 Together, these subprojects demonstrate how AI-first organizations can build knowledge systems that are reliable, reusable, measurable, and designed for continuous improvement.
 
-**The result is a production-inspired blueprint for designing knowledge systems.**
-
 ---
 
 ## Repository focus
 
-This repository focuses on **the systems that enable AI agents to operate reliably within organizations** *(the focus is not to demonstrate the AI model implementation)*
+This repository focuses on **building knowledge systems that enable AI agents to operate reliably within organizations** *(the focus is not to demonstrate the AI model implementation)*
 
 ### Knowledge Architecture
 
