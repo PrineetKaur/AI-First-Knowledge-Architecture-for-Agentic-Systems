@@ -10,7 +10,7 @@ Rather than treating knowledge as static documentation, the project treats it as
 
 ***Structured, versioned, evaluated, and continuously improved throughout its lifecycle***. 
 
-**Note:** _This repository focuses on only one direction of the documentation transformation problem we need to solve, as we have a new consumer, i.e machines rather than just humans (i.e turning existing human documentation into agent-ready knowledge units). This direction is tackled first because it's newer and less proven. In the case of a real system, the structured and governed atomic sources would form a single canonical layer to drive  both human-facing and machine-consumable knowledge. And thus the core principles focused here (be it atomic source discipline, metadata-driven design, chunking as a content decision, and a governed pipeline) apply to both._
+**Note:** _This repository focuses on only one direction of the documentation transformation problem we need to solve, as we have machines as a new consumer (i.e turning existing human documentation into agent-ready knowledge units). This direction is tackled first because it's newer and less proven. In the case of a real system, the structured and governed atomic sources would form a single canonical layer to drive  both human-facing and machine-consumable knowledge. And thus the core principles focused here (be it atomic source discipline, metadata-driven design, chunking as a content decision, and a governed pipeline) apply to both._
 
 ![Project Preview Image](preview.png)
 
