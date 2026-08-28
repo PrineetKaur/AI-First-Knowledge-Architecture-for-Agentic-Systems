@@ -141,7 +141,7 @@ Designs scalable knowledge operations for planning, creating, reviewing, publish
 **Core Question Addressed:** *How do we operationalize the creation, maintenance, and evolution of AI-ready knowledge assets at scale?*
 
 
-### 5. Tool-Using Agent System
+### 5. Knowledge Platform Architecture
 
 **Architectural Role:** *Establishes the Integration layer.*
 
